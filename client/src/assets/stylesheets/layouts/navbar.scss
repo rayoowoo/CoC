@@ -1,0 +1,26 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: $main-accent;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 1.5em;
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        img {
+            width: 5%;
+            height: 5%;
+        }
+    }
+    .navbar-right {
+        display: flex;
+    }
+}

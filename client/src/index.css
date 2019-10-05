@@ -20,4 +20,27 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: yellow;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.navbar-content .navbar-left {
+  display: flex;
+}
+.navbar-content .navbar-left img {
+  width: 5%;
+}
+.navbar-content .navbar-right {
+  display: flex;
+}
+
 /*# sourceMappingURL=index.css.map */
