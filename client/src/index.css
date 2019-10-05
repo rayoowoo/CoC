@@ -5,42 +5,50 @@ body, h1, h2, h3, p, li, ul, ol, nav, section, header, footer, strong, div, span
   outline: 0;
   font: inherit;
   text-decoration: inherit;
-  background: transparent;
-}
+  background: transparent; }
 
 ul, ol {
-  list-style: none;
-}
+  list-style: none; }
 
 *:focus {
-  outline: none;
-}
+  outline: none; }
 
 body {
-  font-family: Roboto, sans-serif;
-}
+  font-family: Roboto, sans-serif; }
 
 .navbar {
   width: 100%;
   position: fixed;
-  background-color: yellow;
-}
+  background-color: yellow; }
 
 .navbar-content {
   display: flex;
   justify-content: space-between;
   width: 70%;
   margin: 0 auto;
-  border: 1px solid black;
-}
-.navbar-content .navbar-left {
-  display: flex;
-}
-.navbar-content .navbar-left img {
-  width: 5%;
-}
-.navbar-content .navbar-right {
-  display: flex;
-}
+  padding: 1em;
+  align-items: center; }
+  .navbar-content .navbar-left {
+    display: flex;
+    align-items: center; }
+    .navbar-content .navbar-left img {
+      width: 2.5vw;
+      height: 2.5vw;
+      border: 1px solid black;
+      border-radius: 50%;
+      margin-right: 1em; }
+    .navbar-content .navbar-left h1 {
+      font-size: 1.5em; }
+    .navbar-content .navbar-left img:hover, .navbar-content .navbar-left h1:hover {
+      cursor: pointer; }
+  .navbar-content .navbar-right {
+    display: flex; }
+    .navbar-content .navbar-right li {
+      margin-left: 0.25em;
+      display: block;
+      padding: 1em; }
+    .navbar-content .navbar-right li:hover {
+      cursor: pointer;
+      background-color: white; }
 
 /*# sourceMappingURL=index.css.map */
