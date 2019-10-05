@@ -16,6 +16,7 @@ export default (props) => {
                     <li>Media</li>
                     <li>Blog</li>
                     <li>Contact Us</li>
+                    <li className="navbar-right-menu">MENU</li>
                 </ul>
             </section>
         </header>
