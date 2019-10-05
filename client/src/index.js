@@ -1,8 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
-import App from './js/App'
+import App from './js/App';
+import './index.css';
 
-document.addEventListener("DOMContentLoaded", () => {
-    const root = document.getElementById("root");
-    ReactDOM.render(<App />, root);
-})
+const root = document.getElementById("root");
+ReactDOM.render(<App />, root);
