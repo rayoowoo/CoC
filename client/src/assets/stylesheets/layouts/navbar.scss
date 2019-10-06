@@ -10,7 +10,7 @@
     margin: 0 auto;
     padding: 1em;
     align-items: center;
-    height: 3em;
+    height: $navbar-height;
     width: 70%;
 
     .navbar-left {
@@ -63,4 +63,8 @@
             }
         }
     }
+}
+
+.navbar-filler {
+    height: $navbar-fill;
 }

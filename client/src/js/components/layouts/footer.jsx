@@ -13,7 +13,7 @@ export default (props) => {
             </section>
 
             <section className="footer-disclaimer">
-                <p>2019 Christians on Campus at Berkeley</p>
+                <p>© 2019 Christians on Campus at Berkeley</p>
                 <p>ucb.coc@gmail.com</p>
                 <p>510.859.4687</p>
             </section>

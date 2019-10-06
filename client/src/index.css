@@ -19,7 +19,7 @@ body {
 .navbar {
   width: 100%;
   position: fixed;
-  background-color: yellow; }
+  background-color: #FFDC6D; }
 
 .navbar-content {
   display: flex;
@@ -53,7 +53,7 @@ body {
       display: none; }
     .navbar-content .navbar-right li:hover {
       cursor: pointer;
-      background-color: blue;
+      background-color: #3F4359;
       color: white;
       font-weight: bold; }
     @media only screen and (max-width: 1200px) {
@@ -62,14 +62,17 @@ body {
       .navbar-content .navbar-right .navbar-right-menu {
         display: block; } }
 
+.navbar-filler {
+  height: 5em; }
+
 .footer {
-  background-color: blue;
+  background-color: #3F4359;
   display: flex;
   flex-direction: column;
   justify-content: center; }
   .footer h2 {
     text-align: center;
-    color: yellow;
+    color: #FFDC6D;
     font-weight: bolder;
     font-size: 1.5em;
     margin-top: 1em; }
@@ -86,9 +89,52 @@ body {
     color: white; }
   .footer .footer-disclaimer {
     margin: 0 auto;
-    color: yellow;
+    color: #FFDC6D;
     margin: 1em 0 2em 0; }
     .footer .footer-disclaimer p {
       text-align: center; }
+
+.landing {
+  width: 100%; }
+  .landing .landing-img-container {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #3F4359; }
+    .landing .landing-img-container img {
+      width: auto;
+      height: 100%;
+      margin: 0 auto; }
+  .landing .landing-banner {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5vh 0;
+    background-color: #3F4359; }
+    .landing .landing-banner h1 {
+      font-size: 3em;
+      margin-bottom: 1.5em;
+      color: white;
+      font-weight: bolder; }
+    .landing .landing-banner button {
+      padding: 0.5em 1.5em;
+      font-size: 1em;
+      font-weight: bolder;
+      border: 0.2em solid #FFDC6D;
+      color: #FFDC6D;
+      letter-spacing: 0.3em; }
+    .landing .landing-banner button:hover {
+      background-color: gray;
+      border-color: gray;
+      color: white;
+      cursor: pointer; }
+  .landing .landing-video {
+    overflow: hidden;
+    background-color: #3F4359; }
+    .landing .landing-video iframe {
+      width: 99vw;
+      height: 46vw;
+      margin: 0 auto;
+      display: block; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,63 @@
+.landing {
+    width: 100%;
+
+
+    .landing-img-container {
+        height: 70vh;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        background-color: $main-dark;
+
+
+        img {
+            width: auto;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    
+
+    .landing-banner {
+        box-sizing: border-box;
+        text-align: center;
+        padding: 5vh 0;
+        background-color: $main-dark;
+
+        h1 {
+            font-size: $head1-size;
+            margin-bottom: 1.5em;
+            color: $main-highlight;
+            font-weight: bolder;
+        }
+
+        button {
+            padding: 0.5em 1.5em;
+            font-size: $paragraph-size;
+            font-weight: bolder;
+            border: 0.2em solid $main-accent;
+            color: $main-accent;
+            letter-spacing: 0.3em;
+        }
+
+        button:hover {
+            background-color: $main-shade;
+            border-color: $main-shade;
+            color: $main-highlight;
+            cursor: pointer;
+        }
+    }
+
+    .landing-video {
+        overflow: hidden;
+        background-color: $main-dark;
+
+        iframe {
+            width: 99vw;
+            height: 46vw;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
