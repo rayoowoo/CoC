@@ -11,7 +11,7 @@ export default (props) => {
                 <button>LEARN MORE</button>
             </div>
             <div className="landing-video">
-                <iframe src="https://player.vimeo.com/video/57909935"
+                <iframe src="https://player.vimeo.com/video/57909935?loop=1"
                         frameborder="0"
                         allow="fullscreen"
                         allowfullscreen></iframe>

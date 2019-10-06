@@ -97,14 +97,14 @@ body {
 .landing {
   width: 100%; }
   .landing .landing-img-container {
-    height: 70vh;
+    height: 67vh;
     width: 100%;
     overflow: hidden;
     text-align: center;
     background-color: #3F4359; }
     .landing .landing-img-container img {
       width: auto;
-      height: 100%;
+      height: inherit;
       margin: 0 auto; }
   .landing .landing-banner {
     box-sizing: border-box;
