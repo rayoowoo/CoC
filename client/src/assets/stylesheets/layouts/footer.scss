@@ -21,10 +21,26 @@
         margin: 1em auto;
     }
 
+    button:hover {
+        background-color: $main-shade;
+        border-color: $main-shade;
+        color: $main-highlight;
+        cursor: pointer;
+    }
+
     .footer-icons {
         margin: 0 auto;
         font-size: 1.5em;
         color: $main-highlight;
+
+        i {
+            padding: 0 0.75em;
+        }
+
+        i:hover {
+            color: $main-accent;
+            cursor: pointer;
+        }
     }
 
     .footer-disclaimer {

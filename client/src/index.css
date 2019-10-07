@@ -83,10 +83,20 @@ body {
     border: 2px solid white;
     width: 10em;
     margin: 1em auto; }
+  .footer button:hover {
+    background-color: gray;
+    border-color: gray;
+    color: white;
+    cursor: pointer; }
   .footer .footer-icons {
     margin: 0 auto;
     font-size: 1.5em;
     color: white; }
+    .footer .footer-icons i {
+      padding: 0 0.75em; }
+    .footer .footer-icons i:hover {
+      color: #FFDC6D;
+      cursor: pointer; }
   .footer .footer-disclaimer {
     margin: 0 auto;
     color: #FFDC6D;
@@ -136,5 +146,8 @@ body {
       height: 46vw;
       margin: 0 auto;
       display: block; }
+
+.dropdown {
+  display: none; }
 
 /*# sourceMappingURL=index.css.map */
