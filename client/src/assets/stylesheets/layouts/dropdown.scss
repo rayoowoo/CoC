@@ -1,3 +1,23 @@
 .dropdown {
     display: none;
 }
+
+.display {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: $main-highlight;
+    color: $main-dark;
+    width: 10vw;
+
+    li {
+        padding: 1em;
+        font-size: 0.85em;
+    }
+
+    li:hover {
+        background-color: $main-dark;
+        color: $main-highlight;
+    }
+}

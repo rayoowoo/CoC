@@ -44,11 +44,12 @@ body {
       cursor: pointer; }
   .navbar-content .navbar-right {
     display: flex; }
-    .navbar-content .navbar-right li {
+    .navbar-content .navbar-right .navbar-right-link {
       margin-left: 0.25em;
       display: block;
       padding: 1em;
-      font-size: 0.85em; }
+      font-size: 0.90em;
+      position: relative; }
     .navbar-content .navbar-right .navbar-right-menu {
       display: none; }
     .navbar-content .navbar-right li:hover {
@@ -149,5 +150,20 @@ body {
 
 .dropdown {
   display: none; }
+
+.display {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  color: #3F4359;
+  width: 10vw; }
+  .display li {
+    padding: 1em;
+    font-size: 0.85em; }
+  .display li:hover {
+    background-color: #3F4359;
+    color: white; }
 
 /*# sourceMappingURL=index.css.map */
