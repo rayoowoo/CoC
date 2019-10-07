@@ -5,7 +5,7 @@ export default (props) => {
     const {links, label} = props
    
     const listLinks = links ? 
-    <ul className="dropdown" id={`${label}-dropdown`}>
+    <ul className="hover-dropdown" id={`${label}-dropdown`}>
     {links.map(el => {
         return <li key={`link-${el}`}>{el}</li>
     })}</ul> : null;
@@ -14,13 +14,13 @@ export default (props) => {
     const trigger = e => {
         e.preventDefault();
         const dropdown = document.getElementById(`${label}-dropdown`);
-        if (dropdown) dropdown.classList.add("display");
+        if (dropdown) dropdown.classList.add("hover-dropdown-display");
     }
 
     const removeTrigger = e => {
         e.preventDefault();
         const dropdown = document.getElementById(`${label}-dropdown`);
-        if (dropdown) dropdown.classList.remove("display");
+        if (dropdown) dropdown.classList.remove("hover-dropdown-display");
     }
 
     return (
