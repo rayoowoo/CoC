@@ -9,8 +9,8 @@ import {useRoutes} from 'hookrouter';
 
 const routes = {
     "/": () => <Home />,
-    "/about": () => <About />,
-    "/about/stories": () => <Stories />
+    "/about-us": () => <About />,
+    "/about-us/our-stories": () => <Stories />
 }
 
 export default () => {

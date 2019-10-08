@@ -121,7 +121,7 @@ body {
     padding: 5vh 0;
     background-color: #3F4359; }
     .landing .landing-banner h1 {
-      font-size: 3em;
+      font-size: 4em;
       margin-bottom: 1.5em;
       color: white;
       font-weight: bolder; }
@@ -169,7 +169,15 @@ body {
 
 .about-splash {
   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
-  height: 46vh; }
+  height: 46vh;
+  padding-top: 1px;
+  margin-top: -1px; }
+  .about-splash h1 {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    margin-top: 1.80em;
+    font-weight: bolder; }
 
 .about-content {
   width: 50em;
@@ -239,7 +247,15 @@ body {
 
 .stories-splash {
   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
-  height: 14vh; }
+  height: 14vh;
+  padding-top: 1px;
+  margin-top: -1px; }
+  .stories-splash h1 {
+    color: #FFDC6D;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 1.5em; }
 
 .stories-content {
   width: 50em;

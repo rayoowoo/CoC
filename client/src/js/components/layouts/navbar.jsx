@@ -14,13 +14,13 @@ export default (props) =>  (
                     </div>
 
                     <div className="navbar-right">
-                        <NavBarLink url="about" label="About Us" links={["Our Stories"]}/>
-                        <NavBarLink url="activities" label="Activities" links={["Bible Studies", "Fellowship Nights", "Small Groups", "Two's and Three's", "College Conferences", "Spring Break Trips"]}/>
-                        <NavBarLink url="upcoming" label="Upcoming"/>
-                        <NavBarLink url="media" label="Media" links={["Pictures", "Videos", "Words of Grace"]}/>
-                        <NavBarLink url="blog" label="Blog"/>
-                        <NavBarLink url="contact" label="Contact Us"/>
-                        <NavBarLink url="/" label="MENU"/>
+                        <NavBarLink label="About Us" links={["Our Stories"]}/>
+                        <NavBarLink label="Activities" links={["Bible Studies", "Fellowship Nights", "Small Groups", "Two's and Three's", "College Conferences", "Spring Break Trips"]}/>
+                        <NavBarLink label="Upcoming"/>
+                        <NavBarLink label="Media" links={["Pictures", "Videos", "Words of Grace"]}/>
+                        <NavBarLink label="Blog"/>
+                        <NavBarLink label="Contact Us"/>
+                        <NavBarLink label="MENU"/>
                     </div>
                 </section>
             </header>

@@ -1,8 +1,8 @@
 import React from 'react';
-import {historyPush} from '../reuse/utils';
+import {historyPush, convertString} from '../reuse/utils';
 import HoverDropdown from '../reuse/hover_dropdown';
 
-export default ({links = [], label, url}) => {
+export default ({links = [], label}) => {
     const menu = label === "MENU" ? "navbar-right-menu navbar-right-link" : "navbar-right-link ";
 
     const trigger = field => e => {
@@ -16,7 +16,7 @@ export default ({links = [], label, url}) => {
 
     return (
         <>
-            <li className={menu} onClick={() => historyPush(`/${url}`)} onMouseOver={trigger(true)} onMouseLeave={trigger()}>{label}
+            <li className={menu} onClick={historyPush(`/${convertString(label)}`)} onMouseOver={trigger(true)} onMouseLeave={trigger()}>{label}
                 <HoverDropdown links={links} label={label}/>
             </li>         
         </>

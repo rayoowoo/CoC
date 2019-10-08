@@ -3,7 +3,9 @@ import React from 'react';
 export default (props) => (
     // TODO: Eventually, this stories splash will become the same for all detail pages.
     <div className="stories">
-        <section className="stories-splash"></section>
+        <section className="stories-splash">
+            <h1>OUR STORIES</h1>
+        </section>
     
         <section className="stories-content">
             {/* TODO */}

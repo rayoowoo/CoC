@@ -1,10 +1,12 @@
 import React from 'react';
+import {historyPush} from '../reuse/utils';
 
 export default (props) => (
     <div className="about">
         {/* TODO:
         This about splash will eventually become the same for all general pages. */}
         <section className="about-splash">
+            <h1>who are we?</h1>
         </section>
 
         <div className="about-content">
@@ -57,7 +59,7 @@ export default (props) => (
             </section>
 
 
-            <button className="about-button">See our stories</button>
+            <button className="about-button" onClick={historyPush("/about/our-stories")}>See our stories</button>
         </div>
         
     </div>
