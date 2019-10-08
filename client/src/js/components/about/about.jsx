@@ -2,8 +2,9 @@ import React from 'react';
 
 export default (props) => (
     <div className="about">
+        {/* TODO:
+        This about splash will eventually become the same for all general pages. */}
         <section className="about-splash">
-
         </section>
 
         <div className="about-content">

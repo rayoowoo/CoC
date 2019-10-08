@@ -234,4 +234,27 @@ body {
     cursor: pointer;
     color: #3F4359; }
 
+.stories {
+  background-color: gray; }
+
+.stories-splash {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+  height: 14vh; }
+
+.stories-content {
+  width: 50em;
+  margin: 0 auto;
+  padding: 3em 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .stories-content .stories-item {
+    width: 32%;
+    height: 40vh;
+    background-color: #3F4359;
+    margin: 0.25em auto;
+    box-sizing: border-box; }
+  .stories-content .stories-item:hover {
+    border: 0.15em solid #FFDC6D;
+    cursor: pointer; }
+
 /*# sourceMappingURL=index.css.map */

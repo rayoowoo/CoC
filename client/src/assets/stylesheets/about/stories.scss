@@ -1,0 +1,29 @@
+.stories {
+    background-color: $main-shade;
+}
+
+.stories-splash {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg');
+    height: 14vh;
+}
+
+.stories-content {
+    width: 50em;
+    margin: 0 auto;
+    padding: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .stories-item {
+        width: 32%;
+        height: 40vh;
+        background-color: $main-dark;
+        margin: 0.25em auto;
+        box-sizing: border-box;
+    }
+
+    .stories-item:hover {
+        border: 0.15em solid $main-accent;
+        cursor: pointer;
+    }
+}
