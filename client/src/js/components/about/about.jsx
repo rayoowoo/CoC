@@ -59,7 +59,7 @@ export default (props) => (
             </section>
 
 
-            <button className="about-button" onClick={historyPush("/about/our-stories")}>See our stories</button>
+            <button className="about-button" onClick={historyPush("/about-us/our-stories")}>See our stories</button>
         </div>
         
     </div>
