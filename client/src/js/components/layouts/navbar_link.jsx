@@ -1,5 +1,5 @@
 import React from 'react';
-import {navigate} from 'hookrouter';
+import {historyPush} from '../reuse/utils';
 import HoverDropdown from '../reuse/hover_dropdown';
 
 export default ({links = [], label, url}) => {
@@ -16,7 +16,7 @@ export default ({links = [], label, url}) => {
 
     return (
         <>
-            <li className={menu} onClick={() => navigate(`/${url}`)} onMouseOver={trigger(true)} onMouseLeave={trigger()}>{label}
+            <li className={menu} onClick={() => historyPush(`/${url}`)} onMouseOver={trigger(true)} onMouseLeave={trigger()}>{label}
                 <HoverDropdown links={links} label={label}/>
             </li>         
         </>
