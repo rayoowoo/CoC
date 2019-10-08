@@ -1,8 +1,9 @@
 import React from 'react';
+import {navigate} from 'hookrouter';
 
 export default (props) => {
     const menu = props.label === "MENU" ? "navbar-right-menu navbar-right-link" : "navbar-right-link ";
-    const {links, label} = props
+    const {links, label, url} = props
    
     const listLinks = links ? 
     <ul className="hover-dropdown" id={`${label}-dropdown`}>
@@ -25,7 +26,7 @@ export default (props) => {
 
     return (
         <>
-            <li className={menu} onMouseOver={trigger} onMouseLeave={removeTrigger}>{label}
+            <li className={menu} onClick={() => navigate(`/${url}`)} onMouseOver={trigger} onMouseLeave={removeTrigger}>{label}
                 {listLinks}
             </li>         
         </>
