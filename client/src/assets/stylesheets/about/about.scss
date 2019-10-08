@@ -10,10 +10,37 @@
 .about-content {
     width: 50em;
     margin: 0 auto;
-    padding: 4em 0;
+    padding: 3em 0;
     color: $main-highlight;
     display: flex;
     flex-direction: column;
+
+    h1, h2, h3 {
+        margin-bottom: 0.25em;
+    }
+
+    h1 {
+        font-size: $head2-size;
+        font-weight: bold;
+        color: $main-accent;
+    }
+
+    h2 {
+        font-size: $head3-size;
+        color: $main-accent;
+    }
+
+    p {
+        font-size: $paragraph-size;
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+
+    li {
+        margin-bottom: 0.25em;
+        margin-left: 1.25em;
+        list-style: circle;
+    }
 
     .about-we-are {
         display: flex;
@@ -43,6 +70,7 @@
         div {
             flex: 3.5;
         }
+
     }
 
     .about-faith {
