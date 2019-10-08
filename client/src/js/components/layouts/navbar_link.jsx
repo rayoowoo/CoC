@@ -14,10 +14,12 @@ export default ({links = [], label}) => {
         }
     }
 
+    const click = label === "MENU" ? () => {} : () => historyPush(`/${convertString(label)}`)
+
     return (
         <>
             <li className={menu} onMouseOver={trigger(true)} onMouseLeave={trigger()}>
-                <p onClick={historyPush(`/${convertString(label)}`)}>{label}</p>
+                <p onClick={click()}>{label}</p>
                 <HoverDropdown links={links} label={label}/>
             </li>         
         </>
