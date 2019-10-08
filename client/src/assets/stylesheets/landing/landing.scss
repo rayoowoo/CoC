@@ -6,13 +6,12 @@
         height: 67vh;
         width: 100%;
         overflow: hidden;
-        text-align: center;
         background-color: $main-dark;
 
 
         img {
-            width: auto;
-            height: inherit;
+            width: 100vw;
+            height: auto;
             margin: 0 auto;
         }
     }

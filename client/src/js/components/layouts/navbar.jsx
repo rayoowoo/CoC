@@ -1,5 +1,6 @@
 import React from 'react';
 import HoverDropdown from './hover_dropdown';
+import image from '../../../assets/images/coc.png';
 
 export default (props) => {
 
@@ -8,7 +9,7 @@ export default (props) => {
             <header className="navbar">
                 <section className="navbar-content">
                     <div className="navbar-left">
-                        <img src="" alt="logo" />
+                        <img src={image} alt="logo" />
                         <h1>CHRISTIANS ON CAMPUS at BERKELEY</h1>
                     </div>
 
