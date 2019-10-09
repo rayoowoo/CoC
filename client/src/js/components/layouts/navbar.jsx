@@ -15,12 +15,12 @@ export default (props) =>  (
                     </div>
 
                     <div className="navbar-right">
-                        <NavBarLink label="About Us" links={["Our Stories"]}/>
-                        <NavBarLink label="Activities" links={["Bible Studies", "Fellowship Nights", "Small Groups", "Two's and Three's", "College Conferences", "Spring Break Trips"]}/>
-                        <NavBarLink label="Upcoming"/>
-                        <NavBarLink label="Media" links={["Pictures", "Videos", "Words of Grace"]}/>
-                        <NavBarLink label="Blog"/>
-                        <NavBarLink label="Contact Us"/>
+                        <NavBarLink menu="right" dir="dropdown" label="About Us" links={["Our Stories"]}/>
+                        <NavBarLink menu="right" dir="dropdown" label="Activities" links={["Bible Studies", "Fellowship Nights", "Small Groups", "Two's and Three's", "College Conferences", "Spring Break Trips"]}/>
+                        <NavBarLink menu="right" dir="dropdown" label="Upcoming"/>
+                        <NavBarLink menu="right" dir="dropdown" label="Media" links={["Pictures", "Videos", "Words of Grace"]}/>
+                        <NavBarLink menu="right" dir="dropdown" label="Blog"/>
+                        <NavBarLink menu="right" dir="dropdown" label="Contact Us"/>
                         <Menu />
                     </div>
                 </section>

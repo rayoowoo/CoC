@@ -146,23 +146,38 @@ body {
       margin: 0 auto;
       display: block; }
 
-.hover-dropdown {
+.hover-dropdown, .hover-left {
   display: none; }
 
-.hover-dropdown-display {
+.hover-dropdown-display, .hover-left-display {
   display: block;
   position: absolute;
-  top: 100%;
-  right: 0;
   background-color: white;
   color: #3F4359;
   width: 10vw; }
-  .hover-dropdown-display li {
+  .hover-dropdown-display li, .hover-left-display li {
     padding: 1em;
     font-size: 0.85em; }
-  .hover-dropdown-display li:hover {
+  .hover-dropdown-display li:hover, .hover-left-display li:hover {
     background-color: #3F4359;
     color: white; }
+
+.hover-dropdown-display {
+  top: 100%;
+  right: 0; }
+
+.hover-left-display {
+  right: 100%;
+  top: 0; }
+
+.navbar-menu-link {
+  margin-left: 0.25em;
+  display: block;
+  padding: 1em;
+  font-size: 0.90em;
+  position: relative; }
+  .navbar-menu-link li {
+    font-size: 1em; }
 
 .about {
   background-color: #3F4359; }

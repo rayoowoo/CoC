@@ -9,11 +9,11 @@ export const historyPush = url => {
 
 export const convertString = string => string.split(" ").map(el => el.toLowerCase()).join("-");
 
-export const triggerHover = (field, label) => e => {
+export const triggerHover = (field, label, dir) => e => {
     e.preventDefault();
-    const dropdown = document.getElementById(`${label}-dropdown`);
+    const dropdown = document.getElementById(`${label}-${dir}`);
     if (dropdown) {
-        if (field) return dropdown.classList.add("hover-dropdown-display");
-        dropdown.classList.remove("hover-dropdown-display");
+        if (field) return dropdown.classList.add(`hover-${dir}-display`);
+        dropdown.classList.remove(`hover-${dir}-display`);
     }
 }
