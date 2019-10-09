@@ -37,9 +37,12 @@
         .navbar-right-link {
             margin-left: 0.25em;
             display: block;
-            padding: 1em;
             font-size: 0.90em;
             position: relative;
+
+            p {
+                padding: 1em;
+            }
         }
 
         .navbar-right-menu {

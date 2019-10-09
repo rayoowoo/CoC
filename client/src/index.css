@@ -46,9 +46,10 @@ body {
     .navbar-content .navbar-right .navbar-right-link {
       margin-left: 0.25em;
       display: block;
-      padding: 1em;
       font-size: 0.90em;
       position: relative; }
+      .navbar-content .navbar-right .navbar-right-link p {
+        padding: 1em; }
     .navbar-content .navbar-right .navbar-right-menu {
       display: none; }
     .navbar-content .navbar-right li:hover {
@@ -155,10 +156,13 @@ body {
   background-color: white;
   color: #3F4359;
   width: 10vw; }
-  .hover-dropdown-display li, .hover-left-display li {
-    padding: 1em;
-    font-size: 0.85em; }
-  .hover-dropdown-display li:hover, .hover-left-display li:hover {
+  .hover-dropdown-display .hover-link, .hover-left-display .hover-link {
+    font-size: 0.90em;
+    position: relative; }
+    .hover-dropdown-display .hover-link p, .hover-left-display .hover-link p {
+      padding: 1em;
+      display: block; }
+  .hover-dropdown-display .hover-link:hover, .hover-left-display .hover-link:hover {
     background-color: #3F4359;
     color: white; }
 
@@ -169,15 +173,6 @@ body {
 .hover-left-display {
   right: 100%;
   top: 0; }
-
-.navbar-menu-link {
-  margin-left: 0.25em;
-  display: block;
-  padding: 1em;
-  font-size: 0.90em;
-  position: relative; }
-  .navbar-menu-link li {
-    font-size: 1em; }
 
 .about {
   background-color: #3F4359; }

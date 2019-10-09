@@ -9,7 +9,7 @@ export default (props) => {
             </div>
             <div className="landing-banner">
                 <h1>Come pursue Christ with us!</h1>
-                <button onClick={historyPush("/about")}>LEARN MORE</button>
+                <button onClick={historyPush("/about-us")}>LEARN MORE</button>
             </div>
             <div className="landing-video">
                 <iframe src="https://player.vimeo.com/video/57909935?loop=1"

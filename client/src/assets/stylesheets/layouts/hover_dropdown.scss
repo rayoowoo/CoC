@@ -10,12 +10,17 @@
     color: $main-dark;
     width: 10vw;
 
-    li {
-        padding: 1em;
-        font-size: 0.85em;
+    .hover-link {
+        font-size: 0.90em;
+        position: relative;
+
+        p {
+            padding: 1em;
+            display: block;
+        }
     }
 
-    li:hover {
+    .hover-link:hover {
         background-color: $main-dark;
         color: $main-highlight;
     }
@@ -29,16 +34,4 @@
 .hover-left-display {
     right: 100%;
     top: 0;
-}
-
-.navbar-menu-link {
-    margin-left: 0.25em;
-    display: block;
-    padding: 1em;
-    font-size: 0.90em;
-    position: relative;
-
-    li {
-        font-size: $paragraph-size;
-    }
 }
