@@ -5,7 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+
+import models, { connectDb } from './models/models';
+import {createStories} from './seeds/stories';
 
 var app = express();
 
@@ -17,6 +19,15 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+
+
+app.get('/api/stories', async (req, res) => {
+  const result = await req.context.models.Story.find();
+  const stories = await result.json();
+  console.log(stories);
+  return res.send(stories);
+})
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.get('*', (req, res) => {
@@ -41,5 +52,21 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+const eraseDatabaseOnSync = true;
+
+connectDb().then(async () => {
+  if (eraseDatabaseOnSync) {
+    await Promise.all([
+      models.Story.deleteMany({}),
+    ]);
+    createStories();
+  }
+
+
+  app.listen(process.env.PORT || 5000, () => 
+    console.log(`Listening on port ${process.env.PORT || 5000}`),
+  );
+})
 
 module.exports = app;

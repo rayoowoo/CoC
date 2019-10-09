@@ -1,8 +1,14 @@
 import React from 'react';
 
-export default (props) => (
+export default (props) => {
     // TODO: Eventually, this stories splash will become the same for all detail pages.
-    <div className="stories">
+
+    const stories = fetch('/api/stories');
+
+    console.log(stories);
+
+    
+    return <div className="stories">
         <section className="stories-splash">
             <h1>OUR STORIES</h1>
         </section>
@@ -23,4 +29,4 @@ export default (props) => (
             <div className="stories-item"></div>
         </section>
     </div>
-)
+}
