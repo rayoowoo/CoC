@@ -26,11 +26,11 @@ export default (props) => (
                     strengthen and spread the Lord’s testimony on the UC Berkeley campus.
                     </p>
                 </div>
-                <img src="" alt="group-photo-1" />
+                <img src="" alt="group-1" />
             </section>
 
             <section className="about-mission">
-                <img src="" alt="group-photo-2" />
+                <img src="" alt="group-2" />
                 <div>
                     <h2>Our Mission</h2>
                     <ul>
@@ -55,7 +55,7 @@ export default (props) => (
                     <li>Christ is coming again to receive His believers to Himself (1 Thes. 2:19).</li>
                 </ul>
                 
-                <img src="" alt="group-photo-3" />
+                <img src="" alt="group-3" />
             </section>
 
 

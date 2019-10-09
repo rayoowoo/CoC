@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBarLink from './navbar_link';
+import Menu from './menu';
 import image from '../../../assets/images/coc.png';
 import { historyPush } from '../reuse/utils';
 
@@ -20,7 +21,7 @@ export default (props) =>  (
                         <NavBarLink label="Media" links={["Pictures", "Videos", "Words of Grace"]}/>
                         <NavBarLink label="Blog"/>
                         <NavBarLink label="Contact Us"/>
-                        <NavBarLink label="MENU"/>
+                        <Menu />
                     </div>
                 </section>
             </header>
