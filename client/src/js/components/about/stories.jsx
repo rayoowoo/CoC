@@ -12,9 +12,13 @@ const routes = {
 export default () => {
     // TODO: Eventually, this stories splash will become the same for all detail pages.
 
-    const stories = useFetch('/api/stories') || [];
+    const result = useFetch('/api/stories') || [];
     const validNames = new Set();
-    stories.forEach(el => validNames.add(el.author));
+    const stories = {};
+    result.forEach(el => {
+        validNames.add(el.author);
+        stories[el.author] = el;
+    });
 
     return useRoutes(routes)({
         stories,
