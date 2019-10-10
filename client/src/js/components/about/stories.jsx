@@ -5,10 +5,9 @@ import StoryTile from './story_tile';
 import {useRoutes} from 'hookrouter';
 
 const routes = {
-    "/about-us/our-stories": () => props => <StoryHome otherProps={props}/>,
-    "/about-us/our-stories/:name": name => props => <StoryPage name={name} otherProps={props}/>
+    "/": () => props => <StoryHome otherProps={props}/>,
+    "/:name": name => props => <StoryPage name={name} otherProps={props}/>
 }
-
 
 export default () => {
     // TODO: Eventually, this stories splash will become the same for all detail pages.
