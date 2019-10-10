@@ -1,5 +1,5 @@
 import React from 'react';
-import { historyPush, convertString, triggerHover } from '../reuse/utils';
+import {triggerHover } from '../reuse/utils';
 import NavBarLink from './navbar_link';
 
 export default () => {

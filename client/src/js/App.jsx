@@ -10,7 +10,7 @@ import {useRoutes} from 'hookrouter';
 const routes = {
     "/": () => <Home />,
     "/about-us": () => <About />,
-    "/about-us/our-stories": () => <Stories />
+    "/about-us/our-stories": () => <Stories />,
 }
 
 export default () => {
