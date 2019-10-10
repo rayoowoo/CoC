@@ -1,12 +1,11 @@
 import React from 'react';
+import {useFetch} from '../reuse/utils';
 
 export default (props) => {
     // TODO: Eventually, this stories splash will become the same for all detail pages.
 
-    const stories = fetch('/api/stories');
-
+    const stories = useFetch('/api/stories');
     console.log(stories);
-
     
     return <div className="stories">
         <section className="stories-splash">

@@ -20,12 +20,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-
+app.use((req, res, next) => {
+  req.context = {
+    models
+  };
+  next();
+})
 
 app.get('/api/stories', async (req, res) => {
-  const result = await req.context.models.Story.find();
-  const stories = await result.json();
-  console.log(stories);
+  const stories = await req.context.models.Story.find();
   return res.send(stories);
 })
 
@@ -67,6 +70,6 @@ connectDb().then(async () => {
   app.listen(process.env.PORT || 5000, () => 
     console.log(`Listening on port ${process.env.PORT || 5000}`),
   );
-})
+}).catch(err => console.log(`there's an error: ${err}`))
 
 module.exports = app;
