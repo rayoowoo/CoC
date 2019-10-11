@@ -282,4 +282,17 @@ body {
     border: 0.15em solid #FFDC6D;
     cursor: pointer; }
 
+.stories-page {
+  width: 50em;
+  margin: 0 auto;
+  padding: 3em 0; }
+  .stories-page h1 {
+    font-size: 2em;
+    color: #FFDC6D;
+    font-weight: bold; }
+  .stories-page p {
+    margin-top: 1em;
+    color: white;
+    text-align: justify; }
+
 /*# sourceMappingURL=index.css.map */

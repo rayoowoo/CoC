@@ -37,3 +37,21 @@
         cursor: pointer;
     }
 }
+
+.stories-page {
+    width: 50em;
+    margin: 0 auto;
+    padding: 3em 0;
+
+    h1 {
+        font-size: $head2-size;
+        color: $main-accent;
+        font-weight: bold;
+    }
+
+    p {
+        margin-top: 1em;
+        color: $main-highlight;
+        text-align: justify;
+    }
+}

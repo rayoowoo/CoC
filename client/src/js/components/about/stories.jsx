@@ -5,39 +5,36 @@ import StoryTile from './story_tile';
 import {useRoutes} from 'hookrouter';
 
 const routes = {
-    "/": () => props => <StoryHome otherProps={props}/>,
-    "/:name": name => props => <StoryPage name={name} otherProps={props}/>
+    "/": () => stories => <StoryHome stories={stories}/>,
+    "/:name": name => stories => <StoryPage name={name} stories={stories}/>
 }
 
 export default () => {
     // TODO: Eventually, this stories splash will become the same for all detail pages.
 
     const result = useFetch('/api/stories') || [];
-    const validNames = new Set();
     const stories = {};
     result.forEach(el => {
-        validNames.add(el.author);
         stories[el.author] = el;
     });
 
-    return useRoutes(routes)({
-        stories,
-        validNames
-    });   
-}
-
-function StoryHome ({otherProps}) {
-    const {stories, validNames} = otherProps;
-
-    const allStories = stories.map(el => {
-        return <StoryTile key={el.id} validNames={validNames} story={el} />
-    })
+    const route = useRoutes(routes)(stories);
 
     return <div className="stories">
         <section className="stories-splash">
             <h1>OUR STORIES</h1>
         </section>
 
+        {route}
+    </div>
+}
+
+function StoryHome ({stories}) {
+    const allStories = Object.values(stories).slice(0, 6).map(el => {
+        return <StoryTile key={el.id} story={el} />
+    })
+
+    return (
         <section className="stories-content">
             {/* TODO */}
             {/* This is assuming there are a fixed amount of stories, that are all text-based, not video. */}
@@ -53,5 +50,5 @@ function StoryHome ({otherProps}) {
             <div className="stories-item"></div>
             <div className="stories-item"></div>
         </section>
-    </div>
+    )
 }
