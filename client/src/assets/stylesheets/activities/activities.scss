@@ -4,7 +4,34 @@
 
 .activities-content {
 
+    .activities-tiles {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .activities-item {
+            border: 2px solid $main-accent;
+            padding-top: 48%;
+            width: 48%;
+            margin-bottom: 2em;
+        }
+
+        @media only screen and (max-width: 50em) {
+            display: block;
+            width: 100vw;
+            padding: 0 2em;
+        }
+    }
+
+    
+
+    .activities-interested {
+        text-align: center;
+    }
 
     .activities-button {
+        margin: 2em auto;
     }
 }

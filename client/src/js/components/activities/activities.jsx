@@ -24,7 +24,7 @@ export default (props) => {
                     <div className="activities-item"></div>
                 </section>
 
-                <h2>Interested in what's coming up?</h2>
+                <h2 className="activities-interested">Interested in what's coming up?</h2>
 
                 <button className="main-button activities-button">FIND OUT HERE</button>
             </section>

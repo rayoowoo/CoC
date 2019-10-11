@@ -315,4 +315,25 @@ body {
 .activities-splash {
   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
 
+.activities-content .activities-tiles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto; }
+  .activities-content .activities-tiles .activities-item {
+    border: 2px solid #FFDC6D;
+    padding-top: 48%;
+    width: 48%;
+    margin-bottom: 2em; }
+  @media only screen and (max-width: 50em) {
+    .activities-content .activities-tiles {
+      display: block;
+      width: 100vw;
+      padding: 0 2em; } }
+.activities-content .activities-interested {
+  text-align: center; }
+.activities-content .activities-button {
+  margin: 2em auto; }
+
 /*# sourceMappingURL=index.css.map */
