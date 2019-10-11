@@ -1,4 +1,5 @@
 import React from 'react';
+import {historyPush} from '../reuse/utils';
 
 export default (props) => {
     return (
@@ -16,14 +17,24 @@ export default (props) => {
                 <p>Click to find out more:</p>
 
                 <section className="activities-tiles tile-set">
-                    <div className="activities-item tile">
+                    <div onClick={historyPush('/activities/bible-studies')} className="activities-item tile">
                         <h1>Bible Studies</h1>
                     </div>
-                    <div className="activities-item tile"></div>
-                    <div className="activities-item tile"></div>
-                    <div className="activities-item tile"></div>
-                    <div className="activities-item tile"></div>
-                    <div className="activities-item tile"></div>
+                    <div onClick={historyPush('/activities/fellowship-nights')} className="activities-item tile">
+                        <h1>Fellowship Nights</h1>
+                    </div>
+                    <div onClick={historyPush('/activities/small-groups')} className="activities-item tile">
+                        <h1>Small Groups</h1>
+                    </div>
+                    <div onClick={historyPush('/activities/twos-and-threes')} className="activities-item tile">
+                        <h1>Two's and Three's</h1>
+                    </div>
+                    <div onClick={historyPush('/activities/college-conference')} className="activities-item tile">
+                        <h1>College Conference</h1>
+                    </div>
+                    <div onClick={historyPush('/activities/spring-break-trip')} className="activities-item tile">
+                        <h1>Spring Break Trip</h1>
+                    </div>
                 </section>
 
                 <h2 className="activities-interested">Interested in what's coming up?</h2>
