@@ -28,28 +28,11 @@
         width: 32%;
         height: 40vh;
         background-color: $main-dark;
-        margin: 0.25em auto;
-        box-sizing: border-box;
 
         h1 {
-            text-align: center;
             margin-top: 3em;
-            color: $main-accent;
-            font-size: $head3-size;
-            display: none;
         }
-    }
-
-    .stories-item:hover {
-        border: 0.15em solid $main-accent;
-        cursor: pointer;
-
-        h1 {
-            display: block;
-        }
-    }
-
-    
+    }    
 }
 
 .stories-page {

@@ -15,13 +15,15 @@ export default (props) => {
 
                 <p>Click to find out more:</p>
 
-                <section className="activities-tiles">
-                    <div className="activities-item"></div>
-                    <div className="activities-item"></div>
-                    <div className="activities-item"></div>
-                    <div className="activities-item"></div>
-                    <div className="activities-item"></div>
-                    <div className="activities-item"></div>
+                <section className="activities-tiles tile-set">
+                    <div className="activities-item tile">
+                        <h1>Bible Studies</h1>
+                    </div>
+                    <div className="activities-item tile"></div>
+                    <div className="activities-item tile"></div>
+                    <div className="activities-item tile"></div>
+                    <div className="activities-item tile"></div>
+                    <div className="activities-item tile"></div>
                 </section>
 
                 <h2 className="activities-interested">Interested in what's coming up?</h2>

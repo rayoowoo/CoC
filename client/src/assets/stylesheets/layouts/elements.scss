@@ -64,3 +64,40 @@
     cursor: pointer;
     color: $main-dark;
 }
+
+
+.tile-set {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .tile {
+        margin-bottom: 2em;
+        position: relative;
+        box-sizing: border-box;
+        border: 2px solid transparent;
+
+
+        h1 {
+            text-align: center;
+            color: $main-accent;
+            font-size: $head3-size;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+    }
+
+    .tile:hover {
+        cursor: pointer;
+        border: 2px solid $main-accent;
+
+        h1 {
+            display: block;
+        }
+    }
+}

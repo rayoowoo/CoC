@@ -12,10 +12,9 @@
         margin: 0 auto;
 
         .activities-item {
-            border: 2px solid $main-accent;
+            background-color: $main-shade;
             padding-top: 48%;
             width: 48%;
-            margin-bottom: 2em;
         }
 
         @media only screen and (max-width: 50em) {
@@ -24,8 +23,6 @@
             padding: 0 2em;
         }
     }
-
-    
 
     .activities-interested {
         text-align: center;
