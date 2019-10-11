@@ -1,4 +1,8 @@
-.large-splash {
+.main-page {
+    background-color: $main-dark;
+}
+
+.main-splash {
     height: 46vh;
     padding-top: 1px;
     margin-top: -1px;
@@ -12,3 +16,51 @@
     }
 }
 
+.main-content {
+    width: 50em;
+    margin: 0 auto;
+    padding: 3em 0;
+    color: $main-highlight;
+
+    h1, h2, h3 {
+        margin-bottom: 0.25em;
+    }
+
+    h1 {
+        font-size: $head2-size;
+        font-weight: bold;
+        color: $main-accent;
+    }
+
+    h2 {
+        font-size: $head3-size;
+        color: $main-accent;
+    }
+
+    p {
+        font-size: $paragraph-size;
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+
+    li {
+        margin-bottom: 0.25em;
+        margin-left: 1.25em;
+        list-style: circle;
+    }
+}
+
+.main-button {
+    background-color: transparent;
+    border: 2px solid $main-accent;
+    color: $main-accent;
+    font-size: $paragraph-size;
+    padding: 0.5em 5em;
+    display: block;
+}
+
+.main-button:hover {
+    background-color: $main-accent;
+    cursor: pointer;
+    color: $main-dark;
+}

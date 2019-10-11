@@ -2,14 +2,14 @@ import React from 'react';
 import {historyPush} from '../reuse/utils';
 
 export default (props) => (
-    <div className="about">
+    <div className="main-page">
         {/* TODO:
         This about splash will eventually become the same for all general pages. */}
-        <section className="large-splash about-splash">
+        <section className="main-splash about-splash">
             <h1>who are we?</h1>
         </section>
 
-        <div className="about-content">
+        <div className="main-content about-content">
             <h1>WE ARE</h1>
             <section className="about-we-are">
                 <div>
@@ -59,7 +59,7 @@ export default (props) => (
             </section>
 
 
-            <button className="about-button" onClick={historyPush("/about-us/our-stories")}>See our stories</button>
+            <button className="main-button about-button" onClick={historyPush("/about-us/our-stories")}>See our stories</button>
         </div>
         
     </div>

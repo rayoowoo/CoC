@@ -70,19 +70,6 @@
     }
 
     button {
-        color: $main-accent;
-        background-color: transparent;
-        padding: 0.5em 5em;
-        border: 2px solid $main-accent;
-        font-weight: bold;
         margin: 2em auto 0 auto;
-        display: block;
-    }
-
-    button:hover {
-        cursor: pointer;
-        background-color: $main-accent;
-        color: $main-dark;
-        border-color: $main-dark;
     }
 }
