@@ -173,20 +173,22 @@ body {
   right: 100%;
   top: 0; }
 
-.about {
-  background-color: #3F4359; }
-
-.about-splash {
-  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+.large-splash {
   height: 46vh;
   padding-top: 1px;
   margin-top: -1px; }
-  .about-splash h1 {
+  .large-splash h1 {
     font-size: 4em;
     color: white;
     text-align: center;
     margin-top: 1.80em;
     font-weight: bolder; }
+
+.about {
+  background-color: #3F4359; }
+
+.about-splash {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
 
 .about-content {
   width: 50em;
@@ -315,5 +317,8 @@ body {
     background-color: #FFDC6D;
     color: #3F4359;
     border-color: #3F4359; }
+
+.activities-splash {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
 
 /*# sourceMappingURL=index.css.map */

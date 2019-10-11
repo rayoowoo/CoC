@@ -5,7 +5,7 @@ export default (props) => (
     <div className="about">
         {/* TODO:
         This about splash will eventually become the same for all general pages. */}
-        <section className="about-splash">
+        <section className="large-splash about-splash">
             <h1>who are we?</h1>
         </section>
 
