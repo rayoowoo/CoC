@@ -278,9 +278,17 @@ body {
     background-color: #3F4359;
     margin: 0.25em auto;
     box-sizing: border-box; }
+    .stories-content .stories-item h1 {
+      text-align: center;
+      margin-top: 3em;
+      color: #FFDC6D;
+      font-size: 1.5em;
+      display: none; }
   .stories-content .stories-item:hover {
     border: 0.15em solid #FFDC6D;
     cursor: pointer; }
+    .stories-content .stories-item:hover h1 {
+      display: block; }
 
 .stories-page {
   width: 50em;
@@ -294,5 +302,18 @@ body {
     margin-top: 1em;
     color: white;
     text-align: justify; }
+  .stories-page button {
+    color: #FFDC6D;
+    background-color: transparent;
+    padding: 0.5em 5em;
+    border: 2px solid #FFDC6D;
+    font-weight: bold;
+    margin: 2em auto 0 auto;
+    display: block; }
+  .stories-page button:hover {
+    cursor: pointer;
+    background-color: #FFDC6D;
+    color: #3F4359;
+    border-color: #3F4359; }
 
 /*# sourceMappingURL=index.css.map */

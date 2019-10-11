@@ -1,5 +1,5 @@
 import React from 'react';
-import NotFound from '../layouts/not_found';
+import {historyPush} from '../reuse/utils';
 
 export default (props) => {
     const { name: { name }, stories } = props;
@@ -12,6 +12,7 @@ export default (props) => {
         <section className="stories-page">
             <h1>{name}</h1>
             {content}
+            <button onClick={historyPush('/about-us/our-stories')}>Back to stories</button>
         </section>
     )
 
