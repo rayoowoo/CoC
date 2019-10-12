@@ -20,8 +20,8 @@ export default () => {
 
     const route = useRoutes(routes)(stories);
 
-    return <div className="stories">
-        <section className="stories-splash">
+    return <div className="detail-page">
+        <section className="stories-splash detail-splash">
             <h1>OUR STORIES</h1>
         </section>
 
@@ -35,7 +35,7 @@ function StoryHome ({stories}) {
     })
 
     return (
-        <section className="stories-content tile-set">
+        <section className="stories-content detail-content tile-set">
             {/* TODO */}
             {/* This is assuming there are a fixed amount of stories, that are all text-based, not video. */}
             {/* Eventually, this will need to fetch from the express backend, which will need to access a database (MongoDB).

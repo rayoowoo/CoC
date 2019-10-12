@@ -65,7 +65,6 @@
     color: $main-dark;
 }
 
-
 .tile-set {
     width: 100%;
     flex-wrap: wrap;
@@ -100,4 +99,29 @@
             display: block;
         }
     }
+}
+
+.detail-page {
+    background-color: $main-shade;
+}
+
+.detail-splash {
+    height: 14vh;
+    padding-top: 1px;
+    margin-top: -1px;
+
+
+    h1 {
+        color: $main-accent;
+        font-size: $head2-size;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 1.5em;
+    }
+}
+
+.detail-content {
+    width: 50em;
+    margin: 0 auto;
+    padding: 3em 0;
 }
