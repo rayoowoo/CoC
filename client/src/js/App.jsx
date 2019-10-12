@@ -12,7 +12,7 @@ const routes = {
     "/": () => <Home />,
     "/about-us": () => <About />,
     "/about-us/our-stories*": () => <Stories />,
-    "/activities": () => <Activities />
+    "/activities*": () => <Activities />
 }
 
 export default () => {

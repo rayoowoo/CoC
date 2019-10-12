@@ -1,7 +1,18 @@
 import React from 'react';
+import BibleStudies from './bible_studies';
 import {historyPush} from '../reuse/utils';
+import {useRoutes} from 'hookrouter';
 
-export default (props) => {
+const routes = {
+    "/": () => <Activities />,
+    "/bible-studies": () => <BibleStudies />
+}
+
+export default () => {
+    return useRoutes(routes);
+}
+
+function Activities() {
     return (
         <section className="main-page">
             <div className="main-splash activities-splash">
