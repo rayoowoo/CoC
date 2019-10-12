@@ -41,7 +41,7 @@ export default (props) => {
 
                 <iframe id="ytplayer" type="text/html"
                     src={`https://www.youtube.com/embed/?listType=playlist&list=PLeWer7-X-8P0Zfb7VqUa6rMjoisbiWD3k`}
-                    frameBorder="0" allowFullscreen>
+                    frameBorder="0" allowFullScreen>
                 </iframe>
             </section>
         </section>

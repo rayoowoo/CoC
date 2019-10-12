@@ -1,5 +1,6 @@
 import React from 'react';
 import BibleStudies from './bible_studies';
+import NotFound from '../layouts/not_found';
 import {historyPush} from '../reuse/utils';
 import {useRoutes} from 'hookrouter';
 
@@ -9,7 +10,7 @@ const routes = {
 }
 
 export default () => {
-    return useRoutes(routes);
+    return useRoutes(routes) || <NotFound />;
 }
 
 function Activities() {

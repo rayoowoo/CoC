@@ -21,7 +21,7 @@ export default () => {
     const route = useRoutes(routes)(stories);
 
     return <div className="detail-page">
-        <section className="stories-splash detail-splash">
+        <section className="detail-splash stories-splash">
             <h1>OUR STORIES</h1>
         </section>
 
