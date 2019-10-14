@@ -399,7 +399,19 @@ button:hover {
 .small-groups-content .small-groups-quotes .small-groups-quote {
   width: 32%;
   height: 40vh;
-  background-color: #3F4359; }
+  background-color: #3F4359;
+  border: 2px solid white; }
+  .small-groups-content .small-groups-quotes .small-groups-quote .head3 {
+    color: white;
+    display: block; }
+    .small-groups-content .small-groups-quotes .small-groups-quote .head3 .fa {
+      display: block; }
+    .small-groups-content .small-groups-quotes .small-groups-quote .head3 .fa-quote-left {
+      margin-bottom: 0.5em; }
+    .small-groups-content .small-groups-quotes .small-groups-quote .head3 .fa-quote-right {
+      margin-top: 0.5em; }
+.small-groups-content .small-groups-quotes .small-groups-quote:hover {
+  cursor: default; }
 .small-groups-content .small-groups-verse {
   text-align: justify; }
 .small-groups-content .small-groups-verse-ref {
