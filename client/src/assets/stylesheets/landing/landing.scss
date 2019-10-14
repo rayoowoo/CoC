@@ -1,12 +1,10 @@
 .landing {
     width: 100%;
 
-
     .landing-img-container {
         width: 100%;
         overflow: hidden;
         background-color: $main-dark;
-
 
         img {
             width: 100vw;
@@ -14,8 +12,6 @@
             margin: 0 auto;
         }
     }
-
-    
 
     .landing-banner {
         box-sizing: border-box;
@@ -31,12 +27,5 @@
     .landing-video {
         overflow: hidden;
         background-color: $main-dark;
-
-        iframe {
-            width: 99vw;
-            height: 46vw;
-            margin: 0 auto;
-            display: block;
-        }
     }
 }

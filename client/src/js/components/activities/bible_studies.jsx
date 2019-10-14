@@ -39,7 +39,7 @@ export default (props) => {
 
                 <h2 className="head2">This is what we covered last semester in 1 Corinthians!</h2>
 
-                <iframe id="ytplayer" type="text/html"
+                <iframe className="small-video" id="ytplayer" type="text/html"
                     src={`https://www.youtube.com/embed/?listType=playlist&list=PLeWer7-X-8P0Zfb7VqUa6rMjoisbiWD3k`}
                     frameBorder="0" allowFullScreen>
                 </iframe>

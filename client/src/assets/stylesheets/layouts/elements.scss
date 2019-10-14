@@ -1,5 +1,3 @@
-
-
 .head1 {
     font-size: $head1-size;
     color: $main-highlight;
@@ -33,9 +31,6 @@
     font-size: $detail-size;
     color: $main-accent;
 }
-
-
-
 
 .button1 {
     background-color: transparent;
@@ -78,4 +73,16 @@
     background-color: $main-shade;
     border-color: $main-shade;
     color: $main-highlight;
+}
+
+.small-video {
+    width: 43vw;
+    height: 47.5vh;
+}
+
+.big-video {
+    width: 99vw;
+    height: 46vw;
+    margin: 0 auto;
+    display: block;
 }

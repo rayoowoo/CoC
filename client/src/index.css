@@ -84,6 +84,16 @@ button:hover {
   border-color: gray;
   color: white; }
 
+.small-video {
+  width: 43vw;
+  height: 47.5vh; }
+
+.big-video {
+  width: 99vw;
+  height: 46vw;
+  margin: 0 auto;
+  display: block; }
+
 .main-page {
   background-color: #3F4359; }
 
@@ -231,32 +241,6 @@ button:hover {
       text-align: center;
       color: #FFDC6D; }
 
-.landing {
-  width: 100%; }
-  .landing .landing-img-container {
-    width: 100%;
-    overflow: hidden;
-    background-color: #3F4359; }
-    .landing .landing-img-container img {
-      width: 100vw;
-      height: auto;
-      margin: 0 auto; }
-  .landing .landing-banner {
-    box-sizing: border-box;
-    text-align: center;
-    padding: 5vh 0;
-    background-color: #3F4359; }
-    .landing .landing-banner .head1 {
-      margin-bottom: 1.5em; }
-  .landing .landing-video {
-    overflow: hidden;
-    background-color: #3F4359; }
-    .landing .landing-video iframe {
-      width: 99vw;
-      height: 46vw;
-      margin: 0 auto;
-      display: block; }
-
 .hover-dropdown, .hover-left {
   display: none; }
 
@@ -283,6 +267,27 @@ button:hover {
 .hover-left-display {
   right: 100%;
   top: 0; }
+
+.landing {
+  width: 100%; }
+  .landing .landing-img-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #3F4359; }
+    .landing .landing-img-container img {
+      width: 100vw;
+      height: auto;
+      margin: 0 auto; }
+  .landing .landing-banner {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5vh 0;
+    background-color: #3F4359; }
+    .landing .landing-banner .head1 {
+      margin-bottom: 1.5em; }
+  .landing .landing-video {
+    overflow: hidden;
+    background-color: #3F4359; }
 
 .about-splash {
   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
@@ -369,9 +374,6 @@ button:hover {
 
 .bible-studies-content .head2, .bible-studies-content .head3 {
   margin: 1em 0 0.25em 0; }
-.bible-studies-content iframe {
-  width: 43vw;
-  height: 47.5vh; }
 
 .fellowship-nights-splash {
   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
@@ -379,8 +381,6 @@ button:hover {
 .fellowship-night-content .head3 {
   margin-top: 1em; }
 .fellowship-night-content .fellowship-nights-video {
-  width: 43vw;
-  height: 47.5vh;
   margin-top: 1em; }
 .fellowship-night-content .button1 {
   margin: 2em auto 0 auto;
