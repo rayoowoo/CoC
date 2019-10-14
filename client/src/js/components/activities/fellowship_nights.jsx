@@ -15,6 +15,7 @@ export default () => {
                 <h2>{date}</h2>
                 <p>{topic}</p>
                 <iframe type="text/html"
+                    className="fellowship-nights-video"
                     id="ytplayer" 
                     src={url}
                     frameBorder="0" allowFullScreen>
@@ -40,6 +41,8 @@ export default () => {
 
                 {/* fellowship night video urls will be stored in the database */}
                 {fellowshipNights}
+
+                <button className="main-button">View More</button>
             </section>
         </section>
     )
