@@ -10,13 +10,15 @@ export default (props) => {
             <section className="detail-content small-groups-content">
                 <div className="tile-set small-groups-quotes">
                     <div className="tile small-groups-quote">
-                        <h3 className="head3"></h3>
+                        <h3 className="head3">a rambunctious bunch of crazy lovers of Jesus</h3>
                     </div>
                     <div className="tile small-groups-quote">
-                        <h3 className="head3"></h3>
+                        <h3 className="head3">the one thing that brings us 
+                        together is that we all love the Lord and His Word</h3>
                     </div>
                     <div className="tile small-groups-quote">
-                        <h3 className="head3"></h3>
+                        <h3 className="head3">to support one another in pursuing 
+                        the knowledge and experiences of Christ for the building up of His Body</h3>
                     </div>
                 </div>
 

@@ -10,8 +10,6 @@ const routes = {
 }
 
 export default () => {
-    // TODO: Eventually, this stories splash will become the same for all detail pages.
-
     const result = useFetch('/api/stories') || [];
     const stories = {};
     result.forEach(el => {

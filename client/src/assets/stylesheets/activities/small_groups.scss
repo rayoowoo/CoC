@@ -4,10 +4,22 @@
 
 .small-groups-content {
     .small-groups-quotes {
-        .small-group-quote {
+        .small-groups-quote {
             width: 32%;
             height: 40vh;
             background-color: $main-dark;
         }
+    }
+
+    .head3:first-of-type {
+        text-align: justify;
+    }
+
+    .head3:last-of-type {
+        text-align: right;
+    }
+
+    .paragraph {
+        margin: 1em 0;
     }
 }
