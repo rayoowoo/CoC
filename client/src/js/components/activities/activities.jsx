@@ -1,12 +1,14 @@
 import React from 'react';
 import BibleStudies from './bible_studies';
+import FellowshipNights from './fellowship_nights';
 import NotFound from '../layouts/not_found';
 import {historyPush} from '../reuse/utils';
 import {useRoutes} from 'hookrouter';
 
 const routes = {
     "/": () => <Activities />,
-    "/bible-studies": () => <BibleStudies />
+    "/bible-studies": () => <BibleStudies />,
+    "/fellowship-nights": () => <FellowshipNights />
 }
 
 export default () => {
