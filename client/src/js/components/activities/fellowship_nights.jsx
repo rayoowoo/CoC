@@ -12,8 +12,8 @@ export default () => {
         url = url.split("/watch?v=").join("/embed/");
         return (
             <div>
-                <h2>{date}</h2>
-                <p>{topic}</p>
+                <h3 className="head3">{date}</h3>
+                <p className="paragraph">{topic}</p>
                 <iframe type="text/html"
                     className="fellowship-nights-video"
                     id="ytplayer" 
@@ -28,11 +28,11 @@ export default () => {
     return (
         <section className="detail-page">
             <div className="detail-splash fellowship-nights-splash">
-                <h1>Fellowship Nights</h1>
+                <h2 className="head2">Fellowship Nights</h2>
             </div>
 
             <section className="detail-content fellowship-night-content">
-                <p>Once a month during the semester, the entire club gathers together. During these times, 
+                <p className="paragraph">Once a month during the semester, the entire club gathers together. During these times, 
                     we have the opportunity to catch up with one another and to encourage each other with 
                     our experiences of Christ from the previous month. Furthermore, we get to listen to a 
                     short message that dives into a certain topic, usually covered in our weekly Bible 
@@ -42,7 +42,7 @@ export default () => {
                 {/* fellowship night video urls will be stored in the database */}
                 {fellowshipNights}
 
-                <button className="main-button">View More</button>
+                <button className="button1">View More</button>
             </section>
         </section>
     )

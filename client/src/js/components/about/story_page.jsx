@@ -5,13 +5,13 @@ export default (props) => {
     const { name: { name }, stories } = props;
 
     let content = null;
-    if (name in stories) content = stories[name].content.split("/n").map(el => <p>{el}</p>);
+    if (name in stories) content = stories[name].content.split("/n").map(el => <p className="paragraph">{el}</p>);
 
     return (
         <section className="stories-page">
-            <h1>{name}</h1>
+            <h2 className="head2">{name}</h2>
             {content}
-            <button className="main-button" onClick={historyPush('/about-us/our-stories')}>Back to stories</button>
+            <button className="button1" onClick={historyPush('/about-us/our-stories')}>Back to stories</button>
         </section>
     )
 

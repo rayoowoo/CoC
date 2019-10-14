@@ -2,17 +2,48 @@
     background-color: $main-dark;
 }
 
+.head1 {
+    font-size: $head1-size;
+    color: $main-highlight;
+    font-weight: bolder;
+}
+
+.head2 {
+    font-size: $head2-size;
+    color: $main-accent;
+    font-weight: bold;
+}
+
+.head3 {
+    font-size: $head3-size;
+    color: $main-accent;
+}
+
+.paragraph {
+    font-size: $paragraph-size;
+    color: $main-highlight;
+    text-align: justify;
+}
+
+.bullets {
+    margin-bottom: 0.25em;
+    margin-left: 1.25em;
+    list-style: circle;
+}
+
+.detail {
+    font-size: $detail-size;
+    color: $main-accent;
+}
+
 .main-splash {
     height: 46vh;
     padding-top: 1px;
     margin-top: -1px;
 
-    h1 {
-        font-size: $head1-size;
-        color: $main-highlight;
+    .head1 {
         text-align: center;
         margin-top: 1.80em;
-        font-weight: bolder;
     }
 }
 
@@ -22,35 +53,16 @@
     padding: 3em 0;
     color: $main-highlight;
 
-    h1, h2, h3 {
+    .head2, .head3 {
         margin-bottom: 0.25em;
     }
 
-    h1 {
-        font-size: $head2-size;
-        font-weight: bold;
-        color: $main-accent;
-    }
-
-    h2 {
-        font-size: $head3-size;
-        color: $main-accent;
-    }
-
-    p {
-        font-size: $paragraph-size;
+    .paragraph {
         margin-bottom: 1em;
-        text-align: justify;
-    }
-
-    li {
-        margin-bottom: 0.25em;
-        margin-left: 1.25em;
-        list-style: circle;
     }
 }
 
-.main-button {
+.button1 {
     background-color: transparent;
     border: 2px solid $main-accent;
     color: $main-accent;
@@ -59,10 +71,41 @@
     display: block;
 }
 
-.main-button:hover {
+.button1:hover {
     background-color: $main-accent;
     cursor: pointer;
     color: $main-dark;
+}
+
+.button2 {
+    padding: 0.5em 1.5em;
+    font-size: $paragraph-size;
+    font-weight: bolder;
+    border: 0.2em solid $main-accent;
+    color: $main-accent;
+    letter-spacing: 0.3em;
+}
+
+.button2:hover {
+    background-color: $main-shade;
+    border-color: $main-shade;
+    color: $main-highlight;
+    cursor: pointer;
+}
+
+.button3 {
+    font-size: $head3-size;
+    color: $main-highlight;
+    padding: 0.5em 1em;
+    border: 2px solid $main-highlight;
+    width: 10em;
+}
+
+.button3:hover {
+    background-color: $main-shade;
+    border-color: $main-shade;
+    color: $main-highlight;
+    cursor: pointer;
 }
 
 .tile-set {
@@ -78,10 +121,8 @@
         border: 2px solid transparent;
 
 
-        h1 {
+        .head3 {
             text-align: center;
-            color: $main-accent;
-            font-size: $head3-size;
             position: absolute;
             top: 0;
             left: 0;
@@ -95,7 +136,7 @@
         cursor: pointer;
         border: 2px solid $main-accent;
 
-        h1 {
+        .head3 {
             display: block;
         }
     }
@@ -110,11 +151,7 @@
     padding-top: 1px;
     margin-top: -1px;
 
-
-    h1 {
-        color: $main-accent;
-        font-size: $head2-size;
-        font-weight: bolder;
+    .head2 {
         text-align: center;
         margin-top: 1.5em;
     }

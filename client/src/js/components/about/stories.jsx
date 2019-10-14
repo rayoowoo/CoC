@@ -22,7 +22,7 @@ export default () => {
 
     return <div className="detail-page">
         <section className="detail-splash stories-splash">
-            <h1>OUR STORIES</h1>
+            <h2 className="head2">OUR STORIES</h2>
         </section>
 
         {route}

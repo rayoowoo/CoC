@@ -4,29 +4,16 @@
     flex-direction: column;
     justify-content: center;
     
-    h2 {
+    .head3 {
         text-align: center;
-        color: $main-accent;
-        font-weight: bolder;
-        font-size: $head3-size;
         margin-top: 1em;
+        font-weight: bolder;
     }
 
-    button {
-        font-size: $head3-size;
-        color: $main-highlight;
-        padding: 0.5em 1em;
-        border: 2px solid $main-highlight;
-        width: 10em;
+    .button3 {
         margin: 1em auto;
     }
 
-    button:hover {
-        background-color: $main-shade;
-        border-color: $main-shade;
-        color: $main-highlight;
-        cursor: pointer;
-    }
 
     .footer-icons {
         margin: 0 auto;
@@ -45,11 +32,11 @@
 
     .footer-disclaimer {
         margin: 0 auto;
-        color: $main-accent;
         margin: 1em 0 2em 0;
         
-        p {
+        .paragraph {
             text-align: center;
+            color: $main-accent;
         }
     }
 }

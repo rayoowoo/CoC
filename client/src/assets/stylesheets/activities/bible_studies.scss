@@ -4,27 +4,8 @@
 
 .bible-studies-content {
 
-    h1 {
-        font-size: $head1-size;
-        font-weight: bold;
-        color: $main-highlight;
-    }
-
-    h2, h3 {
-        color: $main-accent;
+    .head2, .head3 {
         margin: 1em 0 0.25em 0;
-    }
-    
-    h2 {
-        font-size: $head3-size;
-    }
-
-    h3 {
-        font-size: $head2-size;
-    }
-
-    p {
-        color: $main-highlight;
     }
 
     iframe {

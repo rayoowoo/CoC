@@ -3,14 +3,7 @@
 }
 
 .fellowship-night-content {
-    p {
-        color: $main-highlight;
-        font-size: $paragraph-size;
-    }
-
-    h2 {
-        color: $main-accent;
-        font-size: $head3-size;
+    .head3 {
         margin-top: 1em;
     }
 
@@ -20,7 +13,7 @@
         margin-top: 1em;
     }
 
-    .main-button {
+    .button1 {
         margin: 2em auto 0 auto;
         display: block;
     }
