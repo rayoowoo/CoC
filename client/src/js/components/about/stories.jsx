@@ -44,11 +44,11 @@ function StoryHome ({stories}) {
 
             <div className="tile-set">
                 {allStories}
-                <div className="tile stories-item"></div>
-                <div className="tile stories-item"></div>
-                <div className="tile stories-item"></div>
-                <div className="tile stories-item"></div>
-                <div className="tile stories-item"></div>
+                <div className="tile2 stories-item"></div>
+                <div className="tile2 stories-item"></div>
+                <div className="tile2 stories-item"></div>
+                <div className="tile2 stories-item"></div>
+                <div className="tile2 stories-item"></div>
             </div>
         </section>
     )

@@ -33,22 +33,22 @@ function Activities() {
                 <p className="paragraph">Click to find out more:</p>
 
                 <section className="activities-tiles tile-set">
-                    <div onClick={historyPush('/activities/bible-studies')} className="activities-item tile">
+                    <div onClick={historyPush('/activities/bible-studies')} className="activities-item tile1">
                         <h3 className="head3">Bible Studies</h3>
                     </div>
-                    <div onClick={historyPush('/activities/fellowship-nights')} className="activities-item tile">
+                    <div onClick={historyPush('/activities/fellowship-nights')} className="activities-item tile1">
                         <h3 className="head3">Fellowship Nights</h3>
                     </div>
-                    <div onClick={historyPush('/activities/small-groups')} className="activities-item tile">
+                    <div onClick={historyPush('/activities/small-groups')} className="activities-item tile1">
                         <h3 className="head3">Small Groups</h3>
                     </div>
-                    <div onClick={historyPush('/activities/twos-and-threes')} className="activities-item tile">
+                    <div onClick={historyPush('/activities/twos-and-threes')} className="activities-item tile1">
                         <h3 className="head3">Two's and Three's</h3>
                     </div>
-                    <div onClick={historyPush('/activities/college-conference')} className="activities-item tile">
+                    <div onClick={historyPush('/activities/college-conference')} className="activities-item tile1">
                         <h3 className="head3">College Conference</h3>
                     </div>
-                    <div onClick={historyPush('/activities/spring-break-trip')} className="activities-item tile">
+                    <div onClick={historyPush('/activities/spring-break-trip')} className="activities-item tile1">
                         <h3 className="head3">Spring Break Trip</h3>
                     </div>
                 </section>

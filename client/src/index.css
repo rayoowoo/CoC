@@ -129,12 +129,13 @@ button:hover {
   justify-content: space-between;
   margin: 0 auto;
   display: flex; }
-  .tile-set .tile {
+  .tile-set .tile1 {
     margin-bottom: 2em;
     position: relative;
     box-sizing: border-box;
-    border: 2px solid transparent; }
-    .tile-set .tile .head3 {
+    border: 2px solid transparent;
+    padding: 0.5em; }
+    .tile-set .tile1 .head3 {
       text-align: center;
       position: absolute;
       top: 0;
@@ -142,10 +143,22 @@ button:hover {
       right: 0;
       bottom: 0;
       display: none; }
-  .tile-set .tile:hover {
+  .tile-set .tile2 {
+    margin-bottom: 2em;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5em; }
+    .tile-set .tile2 .head3 {
+      text-align: center;
+      display: none; }
+  .tile-set .tile1:hover, .tile-set .tile2:hover {
     cursor: pointer;
     border: 2px solid #FFDC6D; }
-    .tile-set .tile:hover .head3 {
+    .tile-set .tile1:hover .head3, .tile-set .tile2:hover .head3 {
       display: block; }
 
 .detail-page {
@@ -332,8 +345,6 @@ button:hover {
   width: 32%;
   height: 40vh;
   background-color: #3F4359; }
-  .stories-content .stories-item .head3 {
-    margin-top: 3em; }
 
 .stories-page {
   width: 50em;
@@ -389,9 +400,9 @@ button:hover {
   width: 32%;
   height: 40vh;
   background-color: #3F4359; }
-.small-groups-content .head3:first-of-type {
+.small-groups-content .small-groups-verse {
   text-align: justify; }
-.small-groups-content .head3:last-of-type {
+.small-groups-content .small-groups-verse-ref {
   text-align: right; }
 .small-groups-content .paragraph {
   margin: 1em 0; }

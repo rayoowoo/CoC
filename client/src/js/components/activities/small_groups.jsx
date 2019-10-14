@@ -9,23 +9,23 @@ export default (props) => {
 
             <section className="detail-content small-groups-content">
                 <div className="tile-set small-groups-quotes">
-                    <div className="tile small-groups-quote">
+                    <div className="tile2 small-groups-quote">
                         <h3 className="head3">a rambunctious bunch of crazy lovers of Jesus</h3>
                     </div>
-                    <div className="tile small-groups-quote">
+                    <div className="tile2 small-groups-quote">
                         <h3 className="head3">the one thing that brings us 
                         together is that we all love the Lord and His Word</h3>
                     </div>
-                    <div className="tile small-groups-quote">
+                    <div className="tile2 small-groups-quote">
                         <h3 className="head3">to support one another in pursuing 
                         the knowledge and experiences of Christ for the building up of His Body</h3>
                     </div>
                 </div>
 
-                <h3 className="head3">"And day by day, continuing steadfastly with one 
+                <h3 className="head3 small-groups-verse">"And day by day, continuing steadfastly with one 
                 accord in the temple and breaking bread from house to house, they partook 
                 of their food with exultation and simplicity of heart"</h3>
-                <h3 className="head3">Acts 2:46</h3>
+                <h3 className="head3 small-groups-verse-ref">Acts 2:46</h3>
 
                 <p className="paragraph">Are you away from home for the first time in your life? Do you feel like 
                 you're just eating instant noodles every day? Or maybe you are stuck somewhere 
