@@ -3,7 +3,26 @@ import {useFetch} from '../reuse/utils';
 
 
 export default () => {
-    
+    let fellowshipNights = useFetch('/api/fellowshipnights') || [];
+    console.log(fellowshipNights);
+
+    fellowshipNights = fellowshipNights.map( el => {
+        let {date, topic, url} = el;
+
+        url = url.split("/watch?v=").join("/embed/");
+        return (
+            <div>
+                <h2>{date}</h2>
+                <p>{topic}</p>
+                <iframe type="text/html"
+                    id="ytplayer" 
+                    src={url}
+                    frameBorder="0" allowFullScreen>
+                </iframe>
+            </div>
+        )
+    })
+
 
     return (
         <section className="detail-page">
@@ -20,7 +39,7 @@ export default () => {
                     to new experiences of Christ that we wouldn't have otherwise enjoyed.</p>
 
                 {/* fellowship night video urls will be stored in the database */}
-
+                {fellowshipNights}
             </section>
         </section>
     )

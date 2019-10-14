@@ -6,7 +6,6 @@ export default (props) => {
 
     let content = null;
     if (name in stories) content = stories[name].content.split("/n").map(el => <p>{el}</p>);
-    debugger
 
     return (
         <section className="stories-page">

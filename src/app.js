@@ -33,6 +33,11 @@ app.get('/api/stories', async (req, res) => {
   return res.send(stories);
 })
 
+app.get('/api/fellowshipnights', async (req, res) => {
+  const fsnight = await req.context.models.FellowshipNight.find();
+  return res.send(fsnight);
+})
+
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'));
@@ -65,8 +70,8 @@ connectDb().then(async () => {
       models.Story.deleteMany({}),
       models.FellowshipNight.deleteMany({})
     ]);
-    createStories();
-    createFellowshipNights();
+    await createStories();
+    await createFellowshipNights();
   }
 
 
