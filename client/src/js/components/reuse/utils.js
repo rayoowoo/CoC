@@ -8,7 +8,10 @@ export const historyPush = url => {
     }
 }
 
-export const convertString = string => string.split(" ").map(el => el.toLowerCase()).join("-");
+export const convertString = string => string.split(" ").map(el => {
+    el = el.split("").filter(el => el !== "'").join("");
+    return el.toLowerCase();
+}).join("-");
 
 export const triggerHover = (field, label, dir) => e => {
     e.preventDefault();
