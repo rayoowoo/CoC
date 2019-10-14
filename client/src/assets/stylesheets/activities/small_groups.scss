@@ -3,28 +3,15 @@
 }
 
 .small-groups-content {
+
     .small-groups-quotes {
+        
         .small-groups-quote {
-            width: 32%;
-            height: 40vh;
-            background-color: $main-dark;
             border: 2px solid $main-highlight;
 
             .head3 {
                 color: $main-highlight;
                 display: block;
-
-                .fa {
-                    display: block;
-                }
-
-                .fa-quote-left {
-                    margin-bottom: 0.5em;
-                }
-
-                .fa-quote-right {
-                    margin-top: 0.5em;
-                }
             }
 
         }

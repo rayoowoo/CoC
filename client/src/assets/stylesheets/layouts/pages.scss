@@ -47,38 +47,53 @@
     margin: 0 auto;
     display: flex;
 
-    .tile1 {
+    .tile1, .tile2 {
+        background-color: $main-dark;
         margin-bottom: 2em;
-        position: relative;
-        box-sizing: border-box;
         border: 2px solid transparent;
+        box-sizing: border-box;
         padding: 0.5em;
 
+        .head3 {
+            display: none;
+            text-align: center;
+        }
+    }
+
+    .tile1 {
+        position: relative;
+        padding-top: 48%;
+        width: 48%;
 
         .head3 {
-            text-align: center;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            display: none;
         }
     }
 
     .tile2 {
-        margin-bottom: 2em;
-        box-sizing: border-box;
-        border: 2px solid transparent;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 0.5em;
+        width: 32%;
+        height: 40vh;
 
         .head3 {
-            text-align: center;
-            display: none;
+            .fa {
+                display: block;
+            }
+
+            .fa-quote-left {
+                margin-bottom: 0.5em;
+            }
+
+            .fa-quote-right {
+                margin-top: 0.5em;
+            }
         }
     }
 
