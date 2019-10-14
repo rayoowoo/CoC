@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 
 import models, { connectDb } from './models/models';
 import {createStories} from './seeds/stories';
+import { createFellowshipNights} from './seeds/fellowship_nights';
 
 var app = express();
 
@@ -62,8 +63,10 @@ connectDb().then(async () => {
   if (eraseDatabaseOnSync) {
     await Promise.all([
       models.Story.deleteMany({}),
+      models.FellowshipNight.deleteMany({})
     ]);
     createStories();
+    createFellowshipNights();
   }
 
 
