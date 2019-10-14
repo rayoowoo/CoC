@@ -35,7 +35,7 @@ function StoryHome ({stories}) {
     })
 
     return (
-        <section className="stories-content detail-content tile-set">
+        <section className="stories-content detail-content">
             {/* TODO */}
             {/* This is assuming there are a fixed amount of stories, that are all text-based, not video. */}
             {/* Eventually, this will need to fetch from the express backend, which will need to access a database (MongoDB).
@@ -43,12 +43,15 @@ function StoryHome ({stories}) {
             {name: "Rob Jones",
             videoUrl: null,
             content: "..."} */}
-            {allStories}
-            <div className="tile stories-item"></div>
-            <div className="tile stories-item"></div>
-            <div className="tile stories-item"></div>
-            <div className="tile stories-item"></div>
-            <div className="tile stories-item"></div>
+
+            <div className="tile-set">
+                {allStories}
+                <div className="tile stories-item"></div>
+                <div className="tile stories-item"></div>
+                <div className="tile stories-item"></div>
+                <div className="tile stories-item"></div>
+                <div className="tile stories-item"></div>
+            </div>
         </section>
     )
 }

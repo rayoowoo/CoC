@@ -8,10 +8,16 @@ export default (props) => {
             </div>
 
             <section className="detail-content small-groups-content">
-                <div className="tile-set">
-                    <div className="tile"></div>
-                    <div className="tile"></div>
-                    <div className="tile"></div>
+                <div className="tile-set small-groups-quotes">
+                    <div className="tile small-groups-quote">
+                        <h3 className="head3"></h3>
+                    </div>
+                    <div className="tile small-groups-quote">
+                        <h3 className="head3"></h3>
+                    </div>
+                    <div className="tile small-groups-quote">
+                        <h3 className="head3"></h3>
+                    </div>
                 </div>
 
                 <h3 className="head3">"And day by day, continuing steadfastly with one 

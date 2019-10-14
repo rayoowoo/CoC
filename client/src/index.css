@@ -127,7 +127,8 @@ button:hover {
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex; }
   .tile-set .tile {
     margin-bottom: 2em;
     position: relative;
@@ -327,15 +328,12 @@ button:hover {
 .stories-splash {
   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
 
-.stories-content {
-  display: flex;
-  flex-wrap: wrap; }
-  .stories-content .stories-item {
-    width: 32%;
-    height: 40vh;
-    background-color: #3F4359; }
-    .stories-content .stories-item .head3 {
-      margin-top: 3em; }
+.stories-content .stories-item {
+  width: 32%;
+  height: 40vh;
+  background-color: #3F4359; }
+  .stories-content .stories-item .head3 {
+    margin-top: 3em; }
 
 .stories-page {
   width: 50em;
@@ -351,8 +349,6 @@ button:hover {
 
 .activities-content .activities-tiles {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto; }
   .activities-content .activities-tiles .activities-item {
@@ -385,5 +381,13 @@ button:hover {
 .fellowship-night-content .button1 {
   margin: 2em auto 0 auto;
   display: block; }
+
+.small-groups-splash {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
+
+.small-groups-content .small-groups-quotes .small-group-quote {
+  width: 32%;
+  height: 40vh;
+  background-color: #3F4359; }
 
 /*# sourceMappingURL=index.css.map */
