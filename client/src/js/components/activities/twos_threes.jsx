@@ -57,12 +57,12 @@ export default (props) => {
                 way to stay connected, to develop a support system, and, ultimately, to sustain our 
                 Christian pursuit while we are here in school.</p>
 
-                <p className="paragraph">Two's and Three's are great if:</p>
+                <h3 className="head3">Two's and Three's are great if:</h3>
                 <ul className="paragraph">
-                    <li className="bullet">you're too busy to make it to any larger Christian gatherings</li>
-                    <li className="bullet">you want something with more flexibility</li>
-                    <li className="bullet">you want spiritual companions</li>
-                    <li className="bullet">you want some personal mentoring or guidance</li>
+                    <li className="bullets">you're too busy to make it to any larger Christian gatherings</li>
+                    <li className="bullets">you want something with more flexibility</li>
+                    <li className="bullets">you want spiritual companions</li>
+                    <li className="bullets">you want some personal mentoring or guidance</li>
                 </ul>
 
                 <p className="paragraph">If any of these sound like you, then this is for you!</p>

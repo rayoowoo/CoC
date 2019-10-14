@@ -405,4 +405,23 @@ button:hover {
 .small-groups-content .paragraph {
   margin: 1em 0; }
 
+.twos-threes-splash {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
+
+.twos-threes-content .twos-threes-verse {
+  text-align: justify; }
+.twos-threes-content .twos-threes-verse-ref {
+  text-align: right; }
+.twos-threes-content .twos-threes-quotes {
+  margin-top: 2em; }
+  .twos-threes-content .twos-threes-quotes .twos-threes-quote {
+    border: 2px solid white; }
+    .twos-threes-content .twos-threes-quotes .twos-threes-quote .head3 {
+      display: block;
+      color: white; }
+  .twos-threes-content .twos-threes-quotes .twos-threes-quote:hover {
+    cursor: default; }
+.twos-threes-content .paragraph {
+  margin-bottom: 1em; }
+
 /*# sourceMappingURL=index.css.map */
