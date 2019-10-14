@@ -3,6 +3,7 @@ import BibleStudies from './bible_studies';
 import FellowshipNights from './fellowship_nights';
 import SmallGroups from './small_groups';
 import TwosThrees from './twos_threes';
+import CollegeConference from './college_conference';
 import NotFound from '../layouts/not_found';
 import {historyPush} from '../reuse/utils';
 import {useRoutes} from 'hookrouter';
@@ -12,7 +13,8 @@ const routes = {
     "/bible-studies": () => <BibleStudies />,
     "/fellowship-nights": () => <FellowshipNights />,
     "/small-groups": () => <SmallGroups />,
-    "/twos-and-threes": () => <TwosThrees />
+    "/twos-and-threes": () => <TwosThrees />,
+    "/college-conference": () => <CollegeConference />
 }
 
 export default () => {
