@@ -4,6 +4,7 @@ import FellowshipNights from './fellowship_nights';
 import SmallGroups from './small_groups';
 import TwosThrees from './twos_threes';
 import CollegeConference from './college_conference';
+import SpringBreakTrip from './spring_break_trip';
 import NotFound from '../layouts/not_found';
 import {historyPush} from '../reuse/utils';
 import {useRoutes} from 'hookrouter';
@@ -14,7 +15,8 @@ const routes = {
     "/fellowship-nights": () => <FellowshipNights />,
     "/small-groups": () => <SmallGroups />,
     "/twos-and-threes": () => <TwosThrees />,
-    "/college-conference": () => <CollegeConference />
+    "/college-conference": () => <CollegeConference />,
+    "/spring-break-trips": () => <SpringBreakTrip />
 }
 
 export default () => {
