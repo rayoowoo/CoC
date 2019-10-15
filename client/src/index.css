@@ -489,19 +489,26 @@ button:hover {
     margin: 2em 0 1em 0; }
 
 .college-conference-details {
-  background-color: gray;
+  background-color: #FDB515;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 60vh 60vh 60vh; }
-  .college-conference-details .college-conference-details-price {
-    background-color: white;
-    padding: 0 25%;
+  .college-conference-details .college-conference-tile {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    flex-direction: column; }
-    .college-conference-details .college-conference-details-price .head2 {
-      margin-bottom: 2em;
+    flex-direction: column;
+    padding: 0 25%; }
+    .college-conference-details .college-conference-tile .button2 {
+      align-self: center;
+      margin-top: 3em; }
+    .college-conference-details .college-conference-tile .head2 {
+      line-height: 1.5em;
       text-align: center; }
+  .college-conference-details .college-conference-details-price {
+    background-color: white; }
+    .college-conference-details .college-conference-details-price .head2 {
+      margin-bottom: 2em; }
     .college-conference-details .college-conference-details-price .paragraph {
       color: #3F4359; }
       .college-conference-details .college-conference-details-price .paragraph .strong {
@@ -511,26 +518,22 @@ button:hover {
       margin-top: 1.5em; }
       .college-conference-details .college-conference-details-price .detail .highlight-text {
         color: #FDB515; }
-    .college-conference-details .college-conference-details-price .button2 {
-      align-self: center;
-      margin-top: 1.5em; }
     .college-conference-details .college-conference-details-price .paypal-button {
-      margin-top: 1.5em;
-      font-size: 1em; }
-  .college-conference-details div {
-    border: 1px solid black;
-    box-sizing: border-box; }
+      margin-top: 1em;
+      height: 2em;
+      display: block;
+      align-self: center; }
+    .college-conference-details .college-conference-details-price .paypal-button:hover {
+      cursor: pointer; }
+  .college-conference-details .college-conference-testimonial {
+    background-color: #3F4359; }
 
 .college-conference-highlights {
-  height: 30vh;
-  background-color: #FDB515;
+  height: 50vh;
+  background-color: gray;
   display: flex;
   justify-content: center;
   align-items: center; }
-  .college-conference-highlights .college-conference-quotes {
-    height: 20vh;
-    width: 50vw;
-    background-color: #3F4359; }
 
 .college-conference-button-splash {
   height: 75vh;

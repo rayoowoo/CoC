@@ -33,7 +33,7 @@ export default (props) => {
             </div>
 
             <section className="college-conference-details">
-                <div className="college-conference-details-price">
+                <div className="college-conference-tile college-conference-details-price">
                     <h2 className="head2">details</h2>
                     <p className="paragraph">When: <strong className="strong">Saturday, October 26, 10am - 7:30pm</strong></p>
                     <p className="paragraph">Where: UC Davis</p>
@@ -44,26 +44,32 @@ export default (props) => {
                     <p className="detail">No payments after October 20 will be accepted. Cancellations after October 20 and no-shows are both non-refundable.</p>
 
                     <button className="button2">I WANT IN!</button>
-                    <button className="paypal-button">Buy Now</button>
+                    <img className="paypal-button" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/buy-logo-large.png" alt="Buy now with PayPal" />
                 </div>
-                <div></div>
+                <div className="college-conference-tile">
+                    <h1 className="head1"> Image </h1>
+                </div>
 
-                <div></div>
-                <div>
+                <div className="college-conference-tile">
+                    <h1 className="head1"> Image </h1>
+                </div>
+                <div className="college-conference-tile college-conference-testimonial">
                     <h2 className="head2">"What I enjoy about the college conference is all the 
                     fellowship with all the brothers and sisters, but most of all definitely just enjoying Christ together."</h2>
                     <button className="button2">SIGN ME UP!</button>
                 </div>
-                <div>
+                <div className="college-conference-tile college-conference-testimonial">
                     <h2 className="head2">"The college conference is a great time to get into God's word, and really see who God is, and enjoy His presence together!"</h2>
                     <button className="button2">SIGN ME UP!</button>
                 </div>
-                <div></div>
+                <div className="college-conference-tile">
+                    <h1 className="head1"> Image </h1>
+                </div>
             </section>
 
 
             <section className="college-conference-highlights">
-                <div className="college-conference-quotes"></div>
+                <h2 className="head2">Graphics of quotes will go here.</h2>
             </section>
 
             <section className="college-conference-button-splash">

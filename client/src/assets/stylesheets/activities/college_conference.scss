@@ -76,21 +76,35 @@
 }
 
 .college-conference-details {
-    background-color: $main-shade;
+    background-color: $main-accent;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 60vh 60vh 60vh;
 
-    .college-conference-details-price {
-        background-color: $main-highlight;
-        padding: 0 25%;
+    .college-conference-tile {
+        box-sizing: border-box;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        padding: 0 25%;
+
+        .button2 {
+            align-self: center;
+            margin-top: 3em;
+        }
+
+        .head2 {
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+    }
+
+    .college-conference-details-price {
+        background-color: $main-highlight;
 
         .head2 {
             margin-bottom: 2em;
-            text-align: center;
         }
 
         .paragraph {
@@ -101,7 +115,6 @@
             }
         }
 
-
         .detail {
             color: $main-dark;
             margin-top: 1.5em;
@@ -111,35 +124,29 @@
             }
         }
 
-        .button2 {
+        .paypal-button {
+            margin-top: 1em;
+            height: 2em;
+            display: block;
             align-self: center;
-            margin-top: 1.5em;
         }
 
-        .paypal-button {
-            margin-top: 1.5em;
-            font-size: $paragraph-size;
+        .paypal-button:hover {
+            cursor: pointer;
         }
     }
 
-    div {
-        border: 1px solid black;
-        box-sizing: border-box;
+    .college-conference-testimonial {
+        background-color: $main-dark;
     }
 }
 
 .college-conference-highlights {
-    height: 30vh;
-    background-color: $main-accent;
+    height: 50vh;
+    background-color: $main-shade;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .college-conference-quotes {
-        height: 20vh;
-        width: 50vw;
-        background-color: $main-dark;
-    }
 }
 
 .college-conference-button-splash {
