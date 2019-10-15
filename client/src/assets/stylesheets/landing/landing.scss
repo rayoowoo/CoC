@@ -27,5 +27,16 @@
     .landing-video {
         overflow: hidden;
         background-color: $main-dark;
+        position: relative;
+        padding-top: 45%;
+
+        .big-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border: 0;
+        }
     }
 }

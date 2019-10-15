@@ -307,7 +307,16 @@ button:hover {
       margin-bottom: 1.5em; }
   .landing .landing-video {
     overflow: hidden;
-    background-color: #3F4359; }
+    background-color: #3F4359;
+    position: relative;
+    padding-top: 45%; }
+    .landing .landing-video .big-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border: 0; }
 
 .about-splash {
   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
@@ -462,7 +471,17 @@ button:hover {
     margin-top: 2em; }
 
 .college-conference-video {
-  background-color: #FDB515; }
+  background-color: #3F4359;
+  position: relative;
+  padding-top: 45%;
+  overflow: hidden; }
+  .college-conference-video .big-video {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
 
 .college-conference-topic {
   height: 25vh; }

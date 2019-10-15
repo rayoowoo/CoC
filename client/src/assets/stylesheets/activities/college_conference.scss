@@ -52,7 +52,19 @@
 }
 
 .college-conference-video {
-    background-color: $main-accent;
+    background-color: $main-dark;
+    position: relative;
+    padding-top: 45%;
+    overflow: hidden;
+
+    .big-video {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 }
 
 .college-conference-topic {

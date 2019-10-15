@@ -24,7 +24,7 @@ export default (props) => {
             </section>
 
             <section className="college-conference-video">
-                <iframe className="big-video" src="" frameborder="0"></iframe>
+                <iframe title="vimeo-player" className="big-video" src="https://player.vimeo.com/video/203871887" frameBorder="0" allowFullscreen></iframe>
             </section>
 
             <div className="college-conference-topic">
