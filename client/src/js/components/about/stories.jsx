@@ -27,7 +27,7 @@ export default () => {
     </div>
 }
 
-function StoryHome ({stories}) {
+export const StoryHome = ({stories}) => {
     const allStories = Object.values(stories).slice(0, 6).map(el => {
         return <StoryTile key={el.id} story={el} />
     })
