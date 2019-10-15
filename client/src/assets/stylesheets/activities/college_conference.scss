@@ -1,0 +1,108 @@
+.college-conference-splash {
+    height: 95vh;
+    background-color: $main-shade;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .college-conference-splash-title {
+        border: 2px solid $main-dark;
+        display: block;
+        width: 50%;
+        padding: 4em;
+        margin-bottom: 6em;
+
+        .head3, .head1 {
+            color: $main-dark;
+        }
+
+        .head3 {
+            margin-bottom: 1em;
+        }
+    }
+    
+    .fa {
+        font-size: $head3-size;
+        color: $main-dark;
+    }
+}
+
+.college-conference-description, .college-conference-topic {
+    height: 25vh;
+    width: 40vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    
+    .head2 {
+        margin-top: 1em;
+    }
+
+    .paragraph {
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    .button2 {
+        margin-top: 2em;
+    }
+}
+
+.college-conference-video {
+    background-color: $main-accent;
+}
+
+.college-conference-topic {
+    height: 25vh;
+
+    .head2 {
+        margin: 2em 0 1em 0;
+    }
+}
+
+.college-conference-details {
+    background-color: $main-shade;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 60vh 60vh 60vh;
+
+    div {
+        border: 1px solid black;
+    }
+}
+
+.college-conference-highlights {
+    height: 30vh;
+    background-color: $main-accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .college-conference-quotes {
+        height: 20vh;
+        width: 50vw;
+        background-color: $main-dark;
+    }
+}
+
+.college-conference-button-splash {
+    height: 75vh;
+    background-color: $main-highlight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .college-conference-button {
+        font-size: $head2-size;
+        color: $main-dark;
+        border: 2px solid $main-dark;
+        padding: 1em 2em;
+    }
+
+    .college-conference-button:hover {
+        background-color: $main-accent;
+    }
+}

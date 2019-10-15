@@ -424,4 +424,82 @@ button:hover {
 .twos-threes-content .paragraph {
   margin-bottom: 1em; }
 
+.college-conference-splash {
+  height: 95vh;
+  background-color: gray;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .college-conference-splash .college-conference-splash-title {
+    border: 2px solid #3F4359;
+    display: block;
+    width: 50%;
+    padding: 4em;
+    margin-bottom: 6em; }
+    .college-conference-splash .college-conference-splash-title .head3, .college-conference-splash .college-conference-splash-title .head1 {
+      color: #3F4359; }
+    .college-conference-splash .college-conference-splash-title .head3 {
+      margin-bottom: 1em; }
+  .college-conference-splash .fa {
+    font-size: 1.5em;
+    color: #3F4359; }
+
+.college-conference-description, .college-conference-topic {
+  height: 25vh;
+  width: 40vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center; }
+  .college-conference-description .head2, .college-conference-topic .head2 {
+    margin-top: 1em; }
+  .college-conference-description .paragraph, .college-conference-topic .paragraph {
+    margin-top: 1em;
+    text-align: center; }
+  .college-conference-description .button2, .college-conference-topic .button2 {
+    margin-top: 2em; }
+
+.college-conference-video {
+  background-color: #FFDC6D; }
+
+.college-conference-topic {
+  height: 25vh; }
+  .college-conference-topic .head2 {
+    margin: 2em 0 1em 0; }
+
+.college-conference-details {
+  background-color: gray;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 60vh 60vh 60vh; }
+  .college-conference-details div {
+    border: 1px solid black; }
+
+.college-conference-highlights {
+  height: 30vh;
+  background-color: #FFDC6D;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .college-conference-highlights .college-conference-quotes {
+    height: 20vh;
+    width: 50vw;
+    background-color: #3F4359; }
+
+.college-conference-button-splash {
+  height: 75vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .college-conference-button-splash .college-conference-button {
+    font-size: 2em;
+    color: #3F4359;
+    border: 2px solid #3F4359;
+    padding: 1em 2em; }
+  .college-conference-button-splash .college-conference-button:hover {
+    background-color: #FFDC6D; }
+
 /*# sourceMappingURL=index.css.map */

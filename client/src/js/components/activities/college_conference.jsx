@@ -5,15 +5,17 @@ export default (props) => {
         <section className="college-conference main-page">
             <div className="college-conference-splash">
                 <caption className="college-conference-splash-title">
-                    <h3>FALL 2019</h3>
-                    <h1>NORTHERN CALIFORNIA COLLEGE CONFERENCE</h1>
+                    <h3 className="head3">FALL 2019</h3>
+                    <h1 className="head1">NORTHERN CALIFORNIA COLLEGE CONFERENCE</h1>
                 </caption>
+                <div className="fa fa-chevron-down"></div>
+                <div className="fa fa-chevron-down"></div>
                 <div className="fa fa-chevron-down"></div>
             </div>
 
             <section className="college-conference-description">
                 <h2 className="head2">what is it?</h2>
-                <p>Every semester, over 200 college students from our sister clubs across 
+                <p className="paragraph">Every semester, over 200 college students from our sister clubs across 
                     Northern California gather together, away from the busyness of school, 
                     to listen to the Lord speak, to have fellowship with student believers 
                     from other campuses, and to dive into the Word of God.</p>
@@ -21,7 +23,9 @@ export default (props) => {
                 <button className="button2">Sign me up!</button>
             </section>
 
-            <iframe className="big-video" src="" frameborder="0"></iframe>
+            <section className="college-conference-video">
+                <iframe className="big-video" src="" frameborder="0"></iframe>
+            </section>
 
             <div className="college-conference-topic">
                 <h2 className="head2">topic:</h2>
