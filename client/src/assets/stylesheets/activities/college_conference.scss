@@ -66,11 +66,53 @@
 .college-conference-details {
     background-color: $main-shade;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 60vh 60vh 60vh;
+
+    .college-conference-details-price {
+        background-color: $main-highlight;
+        padding: 0 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .head2 {
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        .paragraph {
+            color: $main-dark;
+
+            .strong {
+                font-weight: bolder;
+            }
+        }
+
+
+        .detail {
+            color: $main-dark;
+            margin-top: 1.5em;
+
+            .highlight-text {
+                color: $main-accent;
+            }
+        }
+
+        .button2 {
+            align-self: center;
+            margin-top: 1.5em;
+        }
+
+        .paypal-button {
+            margin-top: 1.5em;
+            font-size: $paragraph-size;
+        }
+    }
 
     div {
         border: 1px solid black;
+        box-sizing: border-box;
     }
 }
 

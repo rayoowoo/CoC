@@ -26,12 +26,12 @@ button:hover {
 
 .head2 {
   font-size: 2em;
-  color: #FFDC6D;
+  color: #FDB515;
   font-weight: bold; }
 
 .head3 {
   font-size: 1.5em;
-  color: #FFDC6D; }
+  color: #FDB515; }
 
 .paragraph {
   font-size: 1em;
@@ -45,26 +45,26 @@ button:hover {
 
 .detail {
   font-size: 0.6em;
-  color: #FFDC6D; }
+  color: #FDB515; }
 
 .button1 {
   background-color: transparent;
-  border: 2px solid #FFDC6D;
-  color: #FFDC6D;
+  border: 2px solid #FDB515;
+  color: #FDB515;
   font-size: 1em;
   padding: 0.5em 5em;
   display: block; }
 
 .button1:hover {
-  background-color: #FFDC6D;
+  background-color: #FDB515;
   color: #3F4359; }
 
 .button2 {
   padding: 0.5em 1.5em;
   font-size: 1em;
   font-weight: bolder;
-  border: 0.2em solid #FFDC6D;
-  color: #FFDC6D;
+  border: 0.2em solid #FDB515;
+  color: #FDB515;
   letter-spacing: 0.3em; }
 
 .button2:hover {
@@ -163,7 +163,7 @@ button:hover {
       margin-top: 0.5em; }
   .tile-set .tile1:hover, .tile-set .tile2:hover {
     cursor: pointer;
-    border: 2px solid #FFDC6D; }
+    border: 2px solid #FDB515; }
     .tile-set .tile1:hover .head3, .tile-set .tile2:hover .head3 {
       display: block; }
 
@@ -186,7 +186,7 @@ button:hover {
 .navbar {
   width: 100%;
   position: fixed;
-  background-color: #FFDC6D;
+  background-color: #FDB515;
   z-index: 2; }
 
 .navbar-content {
@@ -252,14 +252,14 @@ button:hover {
     .footer .footer-icons i {
       padding: 0 0.75em; }
     .footer .footer-icons i:hover {
-      color: #FFDC6D;
+      color: #FDB515;
       cursor: pointer; }
   .footer .footer-disclaimer {
     margin: 0 auto;
     margin: 1em 0 2em 0; }
     .footer .footer-disclaimer .paragraph {
       text-align: center;
-      color: #FFDC6D; }
+      color: #FDB515; }
 
 .hover-dropdown, .hover-left {
   display: none; }
@@ -462,7 +462,7 @@ button:hover {
     margin-top: 2em; }
 
 .college-conference-video {
-  background-color: #FFDC6D; }
+  background-color: #FDB515; }
 
 .college-conference-topic {
   height: 25vh; }
@@ -472,14 +472,39 @@ button:hover {
 .college-conference-details {
   background-color: gray;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 60vh 60vh 60vh; }
+  .college-conference-details .college-conference-details-price {
+    background-color: white;
+    padding: 0 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .college-conference-details .college-conference-details-price .head2 {
+      margin-bottom: 2em;
+      text-align: center; }
+    .college-conference-details .college-conference-details-price .paragraph {
+      color: #3F4359; }
+      .college-conference-details .college-conference-details-price .paragraph .strong {
+        font-weight: bolder; }
+    .college-conference-details .college-conference-details-price .detail {
+      color: #3F4359;
+      margin-top: 1.5em; }
+      .college-conference-details .college-conference-details-price .detail .highlight-text {
+        color: #FDB515; }
+    .college-conference-details .college-conference-details-price .button2 {
+      align-self: center;
+      margin-top: 1.5em; }
+    .college-conference-details .college-conference-details-price .paypal-button {
+      margin-top: 1.5em;
+      font-size: 1em; }
   .college-conference-details div {
-    border: 1px solid black; }
+    border: 1px solid black;
+    box-sizing: border-box; }
 
 .college-conference-highlights {
   height: 30vh;
-  background-color: #FFDC6D;
+  background-color: #FDB515;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -500,6 +525,6 @@ button:hover {
     border: 2px solid #3F4359;
     padding: 1em 2em; }
   .college-conference-button-splash .college-conference-button:hover {
-    background-color: #FFDC6D; }
+    background-color: #FDB515; }
 
 /*# sourceMappingURL=index.css.map */

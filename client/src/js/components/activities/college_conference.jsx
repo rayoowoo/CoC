@@ -34,13 +34,14 @@ export default (props) => {
 
             <section className="college-conference-details">
                 <div className="college-conference-details-price">
-                    <p className="paragraph">When: <strong className="strong">Satruday, October 26, 10am - 7:30pm</strong></p>
+                    <h2 className="head2">details</h2>
+                    <p className="paragraph">When: <strong className="strong">Saturday, October 26, 10am - 7:30pm</strong></p>
                     <p className="paragraph">Where: UC Davis</p>
                     <p className="paragraph">Early Bird Cost: $35 if you register and pay by October 13</p>
                     <p className="paragraph">Later Bird Cost: $45 if you register and pay by October 20</p>
-                    <p className="paragraph"><span className="highlight-text">Your registration is not complete until we receive your payment!</span>
+                    <p className="detail"><span className="highlight-text">Your registration is not complete until we receive your payment!</span>
                     If you are planning to submit payment by PayPal, please note there is a small convenience fee. </p>
-                    <p className="paragraph">No payments after October 20 will be accepted. Cancellations after October 20 and no-shows are both non-refundable.</p>
+                    <p className="detail">No payments after October 20 will be accepted. Cancellations after October 20 and no-shows are both non-refundable.</p>
 
                     <button className="button2">I WANT IN!</button>
                     <button className="paypal-button">Buy Now</button>
