@@ -25,12 +25,12 @@ const calcTime = (dateObject) => {
     return `${hours}:${minutes}:${seconds} ${month}/${date}/${year}`;
 }
 
-export const sendMessage = (year, month, day, firstName, lastName, gender, phone, text, email, schoolYear,
+export const sendMessage = (date, firstName, lastName, gender, phone, text, email, schoolYear,
     major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments) => {
     
     const timestamp = calcTime(new Date());
 
-    const data = {timestamp, year, month, day, firstName, lastName, gender, phone, text, email, schoolYear,
+    const data = {timestamp, date, firstName, lastName, gender, phone, text, email, schoolYear,
         major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments}
     
     return $.ajax({
