@@ -563,4 +563,9 @@ button:hover {
 .sbt-content .button1 {
   margin-top: 2em; }
 
+.contact-content form {
+  color: white; }
+  .contact-content form input {
+    background-color: white; }
+
 /*# sourceMappingURL=index.css.map */
