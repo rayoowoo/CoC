@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {sendMessage} from '../reuse/google_form_submit';
+import {historyPush} from '../reuse/utils';
 
 export default () => {
     const [year, setYear] = useState("j");
@@ -37,7 +38,19 @@ export default () => {
     function handleSubmit(e) {
         e.preventDefault();
         sendMessage(year, month, day, firstName, lastName, gender, phone, text, email, schoolYear,
-            major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments);
+            major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments).then(() => {
+                Object.values(setters).forEach( el => {
+                    el("");
+                });
+                document.querySelector(".contact-form").classList.remove("contact-display");
+                document.querySelector(".contact-response").classList.add("contact-display");
+            });
+    }
+
+    function returnForm(e) {
+        e.preventDefault();
+        document.querySelector(".contact-response").classList.remove("contact-display");
+        document.querySelector(".contact-form").classList.add("contact-display");
     }
 
     return (
@@ -47,7 +60,7 @@ export default () => {
             </div>
 
             <section className="main-content contact-content">
-                <form onSubmit={handleSubmit}>
+                <form className="contact-display contact-form" onSubmit={handleSubmit}>
                     <h1>Today's date</h1>
                     <input type="text" 
                     name="year"
@@ -157,6 +170,13 @@ export default () => {
 
                     <input type="submit"/>
                 </form>
+
+                <div className="contact-response">
+                    <h2 className="head2">Thank you for contacting us!</h2>
+                    <p className="paragraph">We hope to talk to you soon!</p>
+                    <button className="button1" onClick={returnForm}>Return to form</button>
+                    <button className="button2" onClick={historyPush("/")}>Home</button>
+                </div>
             </section>
         </section>
     )

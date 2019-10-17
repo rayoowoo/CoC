@@ -1,10 +1,24 @@
-.contact-content {
+.contact-splash {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg')
+}
 
-    form {
+.contact-content {
+    
+    .contact-form {
+        display: none;
         color: $main-highlight;
-        
+
         input {
             background-color: white;
         }
     }
+
+    .contact-response {
+        display: none;
+    }
+
+    .contact-display {
+        display: block;
+    }
 }
+

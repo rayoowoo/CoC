@@ -563,9 +563,17 @@ button:hover {
 .sbt-content .button1 {
   margin-top: 2em; }
 
-.contact-content form {
+.contact-splash {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
+
+.contact-content .contact-form {
+  display: none;
   color: white; }
-  .contact-content form input {
+  .contact-content .contact-form input {
     background-color: white; }
+.contact-content .contact-response {
+  display: none; }
+.contact-content .contact-display {
+  display: block; }
 
 /*# sourceMappingURL=index.css.map */
