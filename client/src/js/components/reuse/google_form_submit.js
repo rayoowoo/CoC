@@ -1,35 +1,45 @@
 import $ from 'jquery';
 
-const ACTION = "https://script.google.com/macros/s/AKfycbyRJ-j28N1Z-VrUO0q8VzD6q4He5TaKRl3fUM1G6OFJlGgkARw/exec"
+const url = "https://script.google.com/macros/s/AKfycbyRJ-j28N1Z-VrUO0q8VzD6q4He5TaKRl3fUM1G6OFJlGgkARw/exec";
 
-// const YEAR = "entry.922687844_year";
-// const MONTH = "entry.922687844_month";
-// const DAY = "entry.922687844_day";
-// const FIRST_NAME = "entry.543024837";
-// const LAST_NAME = "entry.1330132312";
-// const GENDER = "entry.2098421359";
-// const PHONE = "entry.415647988";
-// const TEXT = "entry.500947940";
-// const EMAIL = "entry.1683769067";
-// const SCHOOL_YEAR = "entry.1870195278";
-// const MAJOR = "entry.1134993473";
-// const HOME_CITY = "entry.1009507685";
-// const BERKELEY_HOUSING = "entry.1314664420";
-// const INTERESTED = "entry.1515719734";
-// const HOW_MET_US = "entry.207738836";
-// const CLUB_MEMBERS = "entry.1793097082";
-// const COMMENTS = "entry.1482121524" ;
+const calcTime = (dateObject) => {
+    let hours = dateObject.getHours();
+    hours = hours < 10 ? (
+        !hours ? "12" : "0" + hours.toString()
+    ) : hours.toString();
+
+    let minutes = dateObject.getMinutes() + 1;
+    minutes = minutes < 10 ? "0" + minutes.toString() : minutes.toString();
+    
+    let seconds = dateObject.getSeconds() + 1;
+    seconds = seconds < 10 ? "0" + seconds.toString() : seconds.toString();
+
+    let month = dateObject.getMonth() + 1;
+    month = month < 10 ? "0" + month.toString() : month.toString();
+
+    let date = dateObject.getDate() + 1;
+    date = date < 10 ? "0" + date.toString() : date.toString();
+
+    let year = dateObject.getFullYear();
+
+    return `${hours}:${minutes}:${seconds} ${month}/${date}/${year}`;
+}
 
 export const sendMessage = (year, month, day, firstName, lastName, gender, phone, text, email, schoolYear,
     major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments) => {
+    
+    const timestamp = calcTime(new Date());
 
-    const data = {year, month, day, firstName, lastName, gender, phone, text, email, schoolYear,
+    const data = {timestamp, year, month, day, firstName, lastName, gender, phone, text, email, schoolYear,
         major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments}
-
+    
     return $.ajax({
-        url: ACTION,
+        url,
         method: "GET",
         dataType: "json",
-        data: data
+        data
     })
 }
+
+
+    // https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175
