@@ -35,8 +35,8 @@ export default () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        sendMessage(date, firstName, lastName, gender, phone, text, email, schoolYear,
-            major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments).then(() => {
+        sendMessage({date, firstName, lastName, gender, phone, text, email, schoolYear,
+            major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments}).then(() => {
                 Object.values(setters).forEach( el => {
                     el("");
                 });
