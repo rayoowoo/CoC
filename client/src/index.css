@@ -577,16 +577,32 @@ button:hover {
       margin-right: 0; }
   .contact-content .contact-form .paragraph {
     margin-top: 1em;
+    margin-bottom: 0.5em;
     color: #FDB515; }
-  .contact-content .contact-form input, .contact-content .contact-form textarea {
+  .contact-content .contact-form input, .contact-content .contact-form select {
+    height: 1em;
+    font-family: Roboto, sans-serif;
     background-color: white;
-    margin-top: 0.5em;
-    width: 20em;
     padding: 0.25em; }
+  .contact-content .contact-form input[type="text"], .contact-content .contact-form input[type="email"], .contact-content .contact-form textarea {
+    width: 20em;
+    background-color: white; }
   .contact-content .contact-form input[type="email"] {
-    width: 41.5em; }
-  .contact-content .contact-form input {
-    height: 2em; }
+    width: 100%; }
+  .contact-content .contact-form .contact-contact-info {
+    display: flex;
+    align-items: center; }
+    .contact-content .contact-form .contact-contact-info input[type="text"] {
+      margin-right: 1em; }
+    .contact-content .contact-form .contact-contact-info input[type="checkbox"] {
+      margin-right: 0.5em; }
+  .contact-content .contact-form .contact-interests label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+    color: white; }
+    .contact-content .contact-form .contact-interests label input {
+      margin-right: 0.5em; }
 .contact-content .contact-response {
   display: none; }
 .contact-content .contact-display {

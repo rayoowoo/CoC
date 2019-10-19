@@ -27,6 +27,7 @@ export default () => {
     }
 
     function handleChange(field) {
+        // TODO: this needs to handle different kidns of changse, such as dropdowns and checkboxes.
         return e => {
             e.preventDefault();
             setters["set" + field[0].toUpperCase() + field.slice(1)](e.target.value);
@@ -65,17 +66,17 @@ export default () => {
                     </div>
                     
                     <section className="contact-form-flex">
-                        <div>
+                        <div className="contact-form-field contact-first-name">
                             <p className="paragraph">First Name</p>
                             <input type="text" value={firstName} onChange={handleChange("firstName")} />
                         </div>
 
-                        <div>
+                        <div className="contact-form-field contact-last-name">
                             <p className="paragraph">Last Name</p>
                             <input type="text" value={lastName} onChange={handleChange("lastName")} />
                         </div>
 
-                        <div>
+                        <div className="contact-form-field contact-gender">
                             <p className="paragraph">Gender</p>
                             <select onChange={handleChange("gender")}>
                                 <option disabled value="">Select</option>
@@ -86,29 +87,24 @@ export default () => {
                         </div>
                     </section>
 
-                    <section className="contact-form-flex">
-                        <div>
-                            <p className="paragraph">Phone</p>
+                    <section>
+                        <p className="paragraph">Phone</p>
+
+                        <div className="contact-form-field contact-contact-info">
                             <input type="text" value={phone} onChange={handleChange("phone")}/>
-                        </div>
-
-                        <div>
-                            <p className="paragraph">Check here if you do NOT want to receive texts</p>
-                            <input type="checkbox" value={text} onChange={handleChange("text")}/>
-                            <span>Text NOT ok</span>
-                        </div>
-
-                        <div>
-                            <p className="paragraph">Email address</p>
-                            <input type="email" value={email} onChange={handleChange("email")} />
-                        </div>
+                            <input type="checkbox" />
+                            <p>Text NOT ok</p>
+                        </div>        
                     </section>
-
                     
+                    <div className="contact-form-field contact-email">
+                        <p className="paragraph">Email address</p>
+                        <input type="email" value={email} onChange={handleChange("email")} />
+                    </div>
 
                     <section className="contact-form-flex">
-                        <div>
-                            <p className="paragraph">year in fall 2019</p>
+                        <div className="contact-form-field">
+                            <p className="paragraph">Year in fall 2019</p>
                             <select onChange={handleChange("schoolYear")}>
                                 <option value="Freshman">Freshman</option>
                                 <option value="Sophomore">Sophomore</option>
@@ -122,20 +118,20 @@ export default () => {
                             </select>
                         </div>
 
-                        <div>
+                        <div className="contact-form-field">
                             <p className="paragraph">Major</p>
                             <input type="text" value={major} onChange={handleChange("major")}/>
                         </div>
                     </section>
 
                     <section className="contact-form-flex">
-                        <div>
-                            <p className="paragraph">home city</p>
+                        <div className="contact-form-field">
+                            <p className="paragraph">Home city</p>
                             <input type="text" value={homeCity} onChange={handleChange("homeCity")}/>
                         </div>
 
-                        <div>
-                            <p className="paragraph">berkeley housing</p>
+                        <div className="contact-form-field">
+                            <p className="paragraph">Berkeley housing</p>
                             <select onChange={handleChange("berkeleyHousing")}>
                                 <option value="Unit 1">Unit 1</option>
                                 <option value="Unit 2">Unit 2</option>
@@ -150,16 +146,16 @@ export default () => {
                         </div>
                     </section>
 
-                    <div>
+                    <div className="contact-form-field contact-interests">
                         <p className="paragraph">I am interested in</p>
-                        <input type="checkbox" value="Bible Studies" onChange={handleChange("interested")} /><span>Bible Studies</span>
-                        <input type="checkbox" value="Fellowship in 2s and 3s" onChange={handleChange("interested")} /><span>Fellowship in 2s and 3s (prayer and companionship to strengthen your Christians faith)</span>
-                        <input type="checkbox" value="Dinner and fellowship in homes" onChange={handleChange("interested")} /><span>Dinner and fellowship in homes (a home-cooked meal, singing, and fellowship</span>
-                        <input type="checkbox" value="Sunday morning service" onChange={handleChange("interested")} /><span>Sunday morning service</span>
+                        <label className="paragraph"><input type="checkbox" name="interests" value="Bible Studies" onChange={handleChange("interested")} />Bible Studies</label>
+                        <label className="paragraph"><input type="checkbox" name="interests" value="Fellowship in 2s and 3s" onChange={handleChange("interested")} />Fellowship in 2s and 3s (prayer and companionship to strengthen your Christians faith)</label>
+                        <label className="paragraph"><input type="checkbox" name="interests" value="Dinner and fellowship in homes" onChange={handleChange("interested")} />Dinner and fellowship in homes (a home-cooked meal, singing, and fellowship</label>
+                        <label className="paragraph"><input type="checkbox" name="interests" value="Sunday morning service" onChange={handleChange("interested")} />Sunday morning service</label>
                     </div>
 
-                    <div>
-                        <p className="paragraph">how did you meet us?</p>
+                    <div className="contact-form-field">
+                        <p className="paragraph">How did you meet us?</p>
                         <select onChange={handleChange("howMetUs")}>
                             <option value="Golden Bear Orientation">Golden Bear Orientation</option>
                             <option value="Table on campus">Table on campus</option>
@@ -170,12 +166,12 @@ export default () => {
                         </select>
                     </div>
 
-                    <div>
+                    <div className="contact-form-field">
                         <p className="paragraph">Have you met any club members?</p>
                         <input type="text" value={clubMembers} onChange={handleChange("clubMembers")}/>
                     </div>
 
-                    <div>
+                    <div className="contact-form-field">
                         <p className="paragraph">Comments</p>
                         <textarea type="text" value={comments} onChange={handleChange("comments")}/>
                     </div>

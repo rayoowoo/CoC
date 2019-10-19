@@ -23,23 +23,52 @@
 
         .paragraph {
             margin-top: 1em;
+            margin-bottom: 0.5em;
             color: $main-accent;
         }
-
-        input, textarea {
+        
+        input, select {
+            height: 1em;
+            font-family: $sans-serif;
             background-color: white;
-            margin-top: 0.5em;
-            width: 20em;
             padding: 0.25em;
+        }
+        
+        input[type="text"], input[type="email"], textarea {
+            width: 20em;
+            background-color: white;
         }
 
         input[type="email"] {
-            width: 41.5em;
+            width: 100%;
         }
 
-        input {
-            height: 2em;
+        .contact-contact-info {
+            display: flex;
+            align-items: center;
+
+            input[type="text"] {
+                margin-right: 1em;
+            }
+
+            input[type="checkbox"] {
+                margin-right: 0.5em;
+            }
         }
+
+        .contact-interests {
+            label {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5em;
+                color: $main-highlight;
+
+                input {
+                    margin-right: 0.5em;
+                }
+            }
+        }
+
     }
 
     .contact-response {
