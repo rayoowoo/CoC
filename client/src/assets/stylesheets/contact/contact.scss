@@ -8,8 +8,24 @@
         display: none;
         color: $main-highlight;
 
-        input {
+        .contact-form-flex{
+            display: flex;
+        }
+
+        .paragraph {
+            margin-top: 1em;
+            color: $main-accent;
+        }
+
+        input, textarea {
             background-color: white;
+            margin-top: 0.5em;
+            width: 20em;
+            padding: 0.25em;
+        }
+
+        input {
+            height: 2em;
         }
     }
 

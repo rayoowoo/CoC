@@ -569,8 +569,18 @@ button:hover {
 .contact-content .contact-form {
   display: none;
   color: white; }
+  .contact-content .contact-form .contact-form-flex {
+    display: flex; }
+  .contact-content .contact-form .paragraph {
+    margin-top: 1em;
+    color: #FDB515; }
+  .contact-content .contact-form input, .contact-content .contact-form textarea {
+    background-color: white;
+    margin-top: 0.5em;
+    width: 20em;
+    padding: 0.25em; }
   .contact-content .contact-form input {
-    background-color: white; }
+    height: 2em; }
 .contact-content .contact-response {
   display: none; }
 .contact-content .contact-display {

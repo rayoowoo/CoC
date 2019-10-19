@@ -59,91 +59,95 @@ export default () => {
 
             <section className="detail-content contact-content">
                 <form className="contact-display contact-form" onSubmit={handleSubmit}>
-                    <h1 className="head3">Today's date</h1>
-                    <input type="date"
-                    value={date}
-                    onChange={handleChange("date")}/>
+                    <div>
+                        <p className="paragraph">Today's date</p>
+                        <input type="date"value={date} onChange={handleChange("date")}/>
+                    </div>
+                    
+                    <section className="contact-form-flex">
+                        <div>
+                            <p className="paragraph">First Name</p>
+                            <input type="text" value={firstName} onChange={handleChange("firstName")} />
+                        </div>
 
-                    <h1 className="head3">First Name</h1>
-                    <input type="text" 
-                    value={firstName} 
-                    onChange={handleChange("firstName")}/>
+                        <div>
+                            <p className="paragraph">Last Name</p>
+                            <input type="text" value={lastName} onChange={handleChange("lastName")} />
+                        </div>
 
-                    <h1 className="head3">Last Name</h1>
-                    <input type="text" 
-                    value={lastName} 
-                    onChange={handleChange("lastName")}/>
+                        <div>
+                            <p className="paragraph">Gender</p>
+                            <select onChange={handleChange("gender")}>
+                                <option disabled value="">Select</option>
+                                <option value="M">M</option>
+                                <option value="F">F</option>
+                            </select>
 
-                    <h1 className="head3">Gender</h1>
-                    <input type="text" 
-                    value={gender} 
-                    onChange={handleChange("gender")}/>
+                        </div>
+                    </section>
 
-                    <h1 className="head3">Phone</h1>
-                    <input type="text" 
-                    value={phone} 
-                    onChange={handleChange("phone")}/>
-                    
-                    <h1 className="head3">Text NOT ok</h1>
-                    <input type="text" 
-                    value={text} 
-                    onChange={handleChange("text")}/>
-                    
-                    
-                    <h1 className="head3">Email address</h1>
-                    <input type="text" 
-                    value={email} 
-                    onChange={handleChange("email")}/>
-                    
-                    
-                    <h1 className="head3">year in fall 2019</h1>
-                    <input type="text" 
-                    value={schoolYear} 
-                    onChange={handleChange("schoolYear")}/>
-                    
-                    
-                    <h1 className="head3">Major</h1>
-                    <input type="text" 
-                    value={major} 
-                    onChange={handleChange("major")}/>
-                    
-                    
-                    <h1 className="head3">home city</h1>
-                    <input type="text" 
-                    value={homeCity} 
-                    onChange={handleChange("homeCity")}/>
-                    
-                    
-                    <h1 className="head3">berkeley housing</h1>
-                    <input type="text" 
-                    value={berkeleyHousing} 
-                    onChange={handleChange("berkeleyHousing")}/>
-                    
-                    
-                    <h1 className="head3">I am interested in</h1>
-                    <input type="text" 
-                    value={interested} 
-                    onChange={handleChange("interested")}/>
-                    
-                    
-                    <h1 className="head3">how did you meet us?</h1>
-                    <input type="text" 
-                    value={howMetUs} 
-                    onChange={handleChange("howMetUs")}/>
-                    
-                    
-                    <h1 className="head3">Have you met any club members?</h1>
-                    <input type="text" 
-                    value={clubMembers} 
-                    onChange={handleChange("clubMembers")}/>
-                    
-                    
-                    <h1 className="head3">Comments</h1>
-                    <textarea type="text" 
-                    value={comments} 
-                    onChange={handleChange("comments")}/>
+                    <section className="contact-form-flex">
+                        <div>
+                            <p className="paragraph">Phone</p>
+                            <input type="text" value={phone} onChange={handleChange("phone")}/>
+                        </div>
 
-                    <input type="submit"/>
+                        <div>
+                            <p className="paragraph">Text NOT ok</p>
+                            <input type="text" value={text} onChange={handleChange("text")}/>
+                        </div>
+                    </section>
+
+                    <div>
+                        <p className="paragraph">Email address</p>
+                        <input type="text" value={email} onChange={handleChange("email")}/>
+                    </div>
+
+                    <section className="contact-form-flex">
+                        <div>
+                            <p className="paragraph">year in fall 2019</p>
+                            <input type="text" value={schoolYear} onChange={handleChange("schoolYear")}/>
+                        </div>
+
+                        <div>
+                            <p className="paragraph">Major</p>
+                            <input type="text" value={major} onChange={handleChange("major")}/>
+                        </div>
+                    </section>
+
+                    <section className="contact-form-flex">
+                        <div>
+                            <p className="paragraph">home city</p>
+                            <input type="text" value={homeCity} onChange={handleChange("homeCity")}/>
+                        </div>
+
+                        <div>
+                            <p className="paragraph">berkeley housing</p>
+                            <input type="text" value={berkeleyHousing} onChange={handleChange("berkeleyHousing")}/>
+                        </div>
+                    </section>
+
+                    <div>
+                        <p className="paragraph">I am interested in</p>
+                        <input type="text" value={interested} onChange={handleChange("interested")}/>
+                    </div>
+
+                    <div>
+                        <p className="paragraph">how did you meet us?</p>
+                        <input type="text" value={howMetUs} onChange={handleChange("howMetUs")}/>
+                    </div>
+
+                    <div>
+                        <p className="paragraph">Have you met any club members?</p>
+                        <input type="text" value={clubMembers} onChange={handleChange("clubMembers")}/>
+                    </div>
+
+                    <div>
+                        <p className="paragraph">Comments</p>
+                        <textarea type="text" value={comments} onChange={handleChange("comments")}/>
+                    </div>
+
+                    <button className="button1">Submit</button>
                 </form>
 
                 <div className="contact-response">
