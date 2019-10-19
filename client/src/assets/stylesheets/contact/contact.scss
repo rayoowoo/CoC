@@ -10,6 +10,15 @@
 
         .contact-form-flex{
             display: flex;
+
+            div {
+                margin-right: 1em;
+            }
+
+            div:last-child {
+                margin-right: 0;
+            }
+
         }
 
         .paragraph {
@@ -22,6 +31,10 @@
             margin-top: 0.5em;
             width: 20em;
             padding: 0.25em;
+        }
+
+        input[type="email"] {
+            width: 41.5em;
         }
 
         input {

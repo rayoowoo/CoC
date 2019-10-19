@@ -571,6 +571,10 @@ button:hover {
   color: white; }
   .contact-content .contact-form .contact-form-flex {
     display: flex; }
+    .contact-content .contact-form .contact-form-flex div {
+      margin-right: 1em; }
+    .contact-content .contact-form .contact-form-flex div:last-child {
+      margin-right: 0; }
   .contact-content .contact-form .paragraph {
     margin-top: 1em;
     color: #FDB515; }
@@ -579,6 +583,8 @@ button:hover {
     margin-top: 0.5em;
     width: 20em;
     padding: 0.25em; }
+  .contact-content .contact-form input[type="email"] {
+    width: 41.5em; }
   .contact-content .contact-form input {
     height: 2em; }
 .contact-content .contact-response {

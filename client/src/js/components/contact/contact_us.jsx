@@ -93,20 +93,33 @@ export default () => {
                         </div>
 
                         <div>
-                            <p className="paragraph">Text NOT ok</p>
-                            <input type="text" value={text} onChange={handleChange("text")}/>
+                            <p className="paragraph">Check here if you do NOT want to receive texts</p>
+                            <input type="checkbox" value={text} onChange={handleChange("text")}/>
+                            <span>Text NOT ok</span>
+                        </div>
+
+                        <div>
+                            <p className="paragraph">Email address</p>
+                            <input type="email" value={email} onChange={handleChange("email")} />
                         </div>
                     </section>
 
-                    <div>
-                        <p className="paragraph">Email address</p>
-                        <input type="text" value={email} onChange={handleChange("email")}/>
-                    </div>
+                    
 
                     <section className="contact-form-flex">
                         <div>
                             <p className="paragraph">year in fall 2019</p>
-                            <input type="text" value={schoolYear} onChange={handleChange("schoolYear")}/>
+                            <select onChange={handleChange("schoolYear")}>
+                                <option value="Freshman">Freshman</option>
+                                <option value="Sophomore">Sophomore</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Junior (transfer)">Junior (transfer)</option>
+                                <option value="Senior">Senior</option>
+                                <option value="Senior +">Senior +</option>
+                                <option value="Graduate Student">Graduate Student</option>
+                                <option value="Visitor">Visitor</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
 
                         <div>
@@ -123,18 +136,38 @@ export default () => {
 
                         <div>
                             <p className="paragraph">berkeley housing</p>
-                            <input type="text" value={berkeleyHousing} onChange={handleChange("berkeleyHousing")}/>
+                            <select onChange={handleChange("berkeleyHousing")}>
+                                <option value="Unit 1">Unit 1</option>
+                                <option value="Unit 2">Unit 2</option>
+                                <option value="Unit 3">Unit 3</option>
+                                <option value="Blackwell">Blackwell</option>
+                                <option value="Foothill, Stern">Foothill, Stern</option>
+                                <option value="Clark Kerr">Clark Kerr</option>
+                                <option value="Off-campus">Off-campus</option>
+                                <option value="Commuting">Commuting</option>
+                                <option value="Other">Other</option>
+                            </select>
                         </div>
                     </section>
 
                     <div>
                         <p className="paragraph">I am interested in</p>
-                        <input type="text" value={interested} onChange={handleChange("interested")}/>
+                        <input type="checkbox" value="Bible Studies" onChange={handleChange("interested")} /><span>Bible Studies</span>
+                        <input type="checkbox" value="Fellowship in 2s and 3s" onChange={handleChange("interested")} /><span>Fellowship in 2s and 3s (prayer and companionship to strengthen your Christians faith)</span>
+                        <input type="checkbox" value="Dinner and fellowship in homes" onChange={handleChange("interested")} /><span>Dinner and fellowship in homes (a home-cooked meal, singing, and fellowship</span>
+                        <input type="checkbox" value="Sunday morning service" onChange={handleChange("interested")} /><span>Sunday morning service</span>
                     </div>
 
                     <div>
                         <p className="paragraph">how did you meet us?</p>
-                        <input type="text" value={howMetUs} onChange={handleChange("howMetUs")}/>
+                        <select onChange={handleChange("howMetUs")}>
+                            <option value="Golden Bear Orientation">Golden Bear Orientation</option>
+                            <option value="Table on campus">Table on campus</option>
+                            <option value="Flyer">Flyer</option>
+                            <option value="Friend">Friend</option>
+                            <option value="Website">Website</option>
+                            <option value="Other">Other</option>
+                        </select>
                     </div>
 
                     <div>
