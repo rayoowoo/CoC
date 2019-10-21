@@ -28,19 +28,30 @@
         }
         
         input, select {
-            height: 1em;
             font-family: $sans-serif;
             background-color: white;
-            padding: 0.25em;
+            padding-left: 0.25em;
+            font-size: $paragraph-size;
+            height: 1.85em;
+            border: 0;
         }
         
-        input[type="text"], input[type="email"], textarea {
+        input[type="text"], textarea {
             width: 20em;
             background-color: white;
         }
 
         input[type="email"] {
-            width: 100%;
+            width: 47em;
+            background-color: white;
+        }
+
+        textarea {
+            height: 5em;
+        }
+
+        .button1 {
+            margin-top: 1em;
         }
 
         .contact-contact-info {
