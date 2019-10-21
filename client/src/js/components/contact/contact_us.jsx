@@ -14,7 +14,7 @@ export default () => {
     const [major, setMajor] = useState("");
     const [homeCity, setHomeCity] = useState("");
     const [berkeleyHousing, setBerkeleyHousing] = useState("");
-    const [interested, setInterested] = useState("");
+    const [interested, setInterested] = useState(new Set());
     const [howMetUs, setHowMetUs] = useState("");
     const [clubMembers, setClubMembers] = useState("");
     const [comments, setComments] = useState("");
@@ -27,19 +27,37 @@ export default () => {
     }
 
     function handleChange(field) {
-        // TODO: this needs to handle different kidns of changse, such as dropdowns and checkboxes.
+        // TODO: change the state to be on state object. this many setters, when reseting the form, will trigger too
+        // many re-renders. that's not efficient.
         return e => {
-            e.preventDefault();
-            setters["set" + field[0].toUpperCase() + field.slice(1)](e.target.value);
+            let input = e.target.value;
+            if (field === "text") {
+                input = text === "" ? "NOT" : "";
+            } else if (field === "interested") {
+                const newSet = interested;
+                if (interested.has(input)) {
+                    newSet.delete(input);
+                } else {
+                    newSet.add(input);
+                }
+                input = newSet;
+            } 
+            setters["set" + field[0].toUpperCase() + field.slice(1)](input);
         }
     }
 
     function handleSubmit(e) {
         e.preventDefault();
+        const interests = Array.from(interested).join(", ");
         sendMessage({date, firstName, lastName, gender, phone, text, email, schoolYear,
-            major, homeCity, berkeleyHousing, interested, howMetUs, clubMembers, comments}).then(() => {
-                Object.values(setters).forEach( el => {
-                    el("");
+            major, homeCity, berkeleyHousing, interests, howMetUs, clubMembers, comments}).then(() => {
+                Object.keys(setters).forEach( el => {
+                    debugger
+                    if (el === "setInterested") {
+                        setters[el](new Set());
+                    } else {
+                        setters[el]("");
+                    }
                 });
                 document.querySelector(".contact-form").classList.remove("contact-display");
                 document.querySelector(".contact-response").classList.add("contact-display");
@@ -79,9 +97,9 @@ export default () => {
                         <div className="contact-form-field contact-gender">
                             <p className="paragraph">Gender</p>
                             <select onChange={handleChange("gender")}>
-                                <option disabled value="">Select</option>
-                                <option value="M">M</option>
-                                <option value="F">F</option>
+                                <option selected={gender === "" ? true : false} disabled value="">Select</option>
+                                <option selected={gender === "M" ? true : false} value="M">M</option>
+                                <option selected={gender === "F" ? true : false} value="F">F</option>
                             </select>
 
                         </div>
@@ -92,7 +110,7 @@ export default () => {
 
                         <div className="contact-form-field contact-contact-info">
                             <input type="text" value={phone} onChange={handleChange("phone")}/>
-                            <input type="checkbox" />
+                            <input checked={text === "NOT" ? true : false} type="checkbox" onChange={handleChange("text")}/>
                             <p>Text NOT ok</p>
                         </div>        
                     </section>
@@ -106,15 +124,16 @@ export default () => {
                         <div className="contact-form-field">
                             <p className="paragraph">Year in fall 2019</p>
                             <select onChange={handleChange("schoolYear")}>
-                                <option value="Freshman">Freshman</option>
-                                <option value="Sophomore">Sophomore</option>
-                                <option value="Junior">Junior</option>
-                                <option value="Junior (transfer)">Junior (transfer)</option>
-                                <option value="Senior">Senior</option>
-                                <option value="Senior +">Senior +</option>
-                                <option value="Graduate Student">Graduate Student</option>
-                                <option value="Visitor">Visitor</option>
-                                <option value="Other">Other</option>
+                                <option selected={schoolYear === "" ? true : false} disabled value="">Select</option>
+                                <option selected={schoolYear === "Freshman" ? true : false} value="Freshman">Freshman</option>
+                                <option selected={schoolYear === "Sophomore" ? true : false} value="Sophomore">Sophomore</option>
+                                <option selected={schoolYear === "Junior" ? true : false} value="Junior">Junior</option>
+                                <option selected={schoolYear === "Junior (transfer)" ? true : false} value="Junior (transfer)">Junior (transfer)</option>
+                                <option selected={schoolYear === "Senior" ? true : false} value="Senior">Senior</option>
+                                <option selected={schoolYear === "Senior+" ? true : false} value="Senior+">Senior+</option>
+                                <option selected={schoolYear === "Graduate Student" ? true : false} value="Graduate Student">Graduate Student</option>
+                                <option selected={schoolYear === "Visitor" ? true : false} value="Visitor">Visitor</option>
+                                <option selected={schoolYear === "Other" ? true : false} value="Other">Other</option>
                             </select>
                         </div>
 
@@ -133,36 +152,38 @@ export default () => {
                         <div className="contact-form-field">
                             <p className="paragraph">Berkeley housing</p>
                             <select onChange={handleChange("berkeleyHousing")}>
-                                <option value="Unit 1">Unit 1</option>
-                                <option value="Unit 2">Unit 2</option>
-                                <option value="Unit 3">Unit 3</option>
-                                <option value="Blackwell">Blackwell</option>
-                                <option value="Foothill, Stern">Foothill, Stern</option>
-                                <option value="Clark Kerr">Clark Kerr</option>
-                                <option value="Off-campus">Off-campus</option>
-                                <option value="Commuting">Commuting</option>
-                                <option value="Other">Other</option>
+                                <option selected={berkeleyHousing === "" ? true : false} disabled value="">Select</option>                                
+                                <option selected={berkeleyHousing === "Unit 1" ? true : false} value="Unit 1">Unit 1</option>
+                                <option selected={berkeleyHousing === "Unit 2" ? true : false} value="Unit 2">Unit 2</option>
+                                <option selected={berkeleyHousing === "Unit 3" ? true : false} value="Unit 3">Unit 3</option>
+                                <option selected={berkeleyHousing === "Blackwell" ? true : false} value="Blackwell">Blackwell</option>
+                                <option selected={berkeleyHousing === "Foothill, Stern" ? true : false} value="Foothill, Stern">Foothill, Stern</option>
+                                <option selected={berkeleyHousing === "Clark Kerr" ? true : false} value="Clark Kerr">Clark Kerr</option>
+                                <option selected={berkeleyHousing === "Off-campus" ? true : false} value="Off-campus">Off-campus</option>
+                                <option selected={berkeleyHousing === "Commuting" ? true : false} value="Commuting">Commuting</option>
+                                <option selected={berkeleyHousing === "Other" ? true : false} value="Other">Other</option>
                             </select>
                         </div>
                     </section>
 
                     <div className="contact-form-field contact-interests">
                         <p className="paragraph">I am interested in</p>
-                        <label className="paragraph"><input type="checkbox" name="interests" value="Bible Studies" onChange={handleChange("interested")} />Bible Studies</label>
-                        <label className="paragraph"><input type="checkbox" name="interests" value="Fellowship in 2s and 3s" onChange={handleChange("interested")} />Fellowship in 2s and 3s (prayer and companionship to strengthen your Christians faith)</label>
-                        <label className="paragraph"><input type="checkbox" name="interests" value="Dinner and fellowship in homes" onChange={handleChange("interested")} />Dinner and fellowship in homes (a home-cooked meal, singing, and fellowship</label>
-                        <label className="paragraph"><input type="checkbox" name="interests" value="Sunday morning service" onChange={handleChange("interested")} />Sunday morning service</label>
+                        <label className="paragraph"><input selected={interested.has("Bible Studies") ? true : false} type="checkbox" name="interests" value="Bible Studies" onChange={handleChange("interested")} />Bible Studies</label>
+                        <label className="paragraph"><input selected={interested.has("Fellowship in 2s and 3s") ? true : false} type="checkbox" name="interests" value="Fellowship in 2s and 3s" onChange={handleChange("interested")} />Fellowship in 2s and 3s (prayer and companionship to strengthen your Christians faith)</label>
+                        <label className="paragraph"><input selected={interested.has("Dinner and fellowship in homes") ? true : false} type="checkbox" name="interests" value="Dinner and fellowship in homes" onChange={handleChange("interested")} />Dinner and fellowship in homes (a home-cooked meal, singing, and fellowship</label>
+                        <label className="paragraph"><input selected={interested.has("Sunday morning service") ? true : false} type="checkbox" name="interests" value="Sunday morning service" onChange={handleChange("interested")} />Sunday morning service</label>
                     </div>
 
                     <div className="contact-form-field">
                         <p className="paragraph">How did you meet us?</p>
                         <select onChange={handleChange("howMetUs")}>
-                            <option value="Golden Bear Orientation">Golden Bear Orientation</option>
-                            <option value="Table on campus">Table on campus</option>
-                            <option value="Flyer">Flyer</option>
-                            <option value="Friend">Friend</option>
-                            <option value="Website">Website</option>
-                            <option value="Other">Other</option>
+                            <option selected={howMetUs === "" ? true : false} disabled value="">Select</option>
+                            <option selected={howMetUs === "Golden Bear Orientation" ? true : false} value="Golden Bear Orientation">Golden Bear Orientation</option>
+                            <option selected={howMetUs === "Table on campus" ? true : false} value="Table on campus">Table on campus</option>
+                            <option selected={howMetUs === "Flyer" ? true : false} value="Flyer">Flyer</option>
+                            <option selected={howMetUs === "Friend" ? true : false} value="Friend">Friend</option>
+                            <option selected={howMetUs === "Website" ? true : false} value="Website">Website</option>
+                            <option selected={howMetUs === "Other" ? true : false} value="Other">Other</option>
                         </select>
                     </div>
 
