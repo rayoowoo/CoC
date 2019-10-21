@@ -84,6 +84,22 @@
 
     .contact-response {
         display: none;
+        text-align: center;
+
+        .paragraph {
+            text-align: center;
+            margin-bottom: 1em;
+            margin-top: 0.25em;
+        }
+
+        .button1 {
+            margin: 0 auto 1em auto;
+        }
+
+        .button2:hover {
+            background-color: $main-dark;
+            border-color: $main-dark;
+        }
     }
 
     .contact-display {

@@ -611,7 +611,17 @@ button:hover {
     .contact-content .contact-form .contact-interests label input {
       margin-right: 0.5em; }
 .contact-content .contact-response {
-  display: none; }
+  display: none;
+  text-align: center; }
+  .contact-content .contact-response .paragraph {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0.25em; }
+  .contact-content .contact-response .button1 {
+    margin: 0 auto 1em auto; }
+  .contact-content .contact-response .button2:hover {
+    background-color: #3F4359;
+    border-color: #3F4359; }
 .contact-content .contact-display {
   display: block; }
 
