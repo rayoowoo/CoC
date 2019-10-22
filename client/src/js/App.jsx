@@ -7,6 +7,7 @@ import About from './components/about/about';
 import Stories from './components/about/stories';
 import Activities from './components/activities/activities';
 import Contact from './components/contact/contact_us';
+import Admin from './components/admin/admin';
 import {useRoutes} from 'hookrouter';
 
 const routes = {
@@ -14,7 +15,8 @@ const routes = {
     "/about-us": () => <About />,
     "/about-us/our-stories*": () => <Stories />,
     "/activities*": () => <Activities />,
-    "/contact-us*": () => <Contact />
+    "/contact-us*": () => <Contact />,
+    "/admin": () => <Admin />
 }
 
 export default () => {
