@@ -27,10 +27,6 @@ export default () => {
     }
 
     function handleChange(field) {
-        // TODO: change the state to be on state object. this many setters, when reseting the form, will trigger too
-        // many re-renders. that's not efficient.
-
-        // or I could turn the form into a separate component from the response. that might be more efficient for now. 
         return e => {
             let input = e.target.value;
             if (field === "text") {
