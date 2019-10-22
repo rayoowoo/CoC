@@ -9,6 +9,8 @@ var indexRouter = require('./routes/index');
 import models, { connectDb } from './models/models';
 import {createStories} from './seeds/stories';
 import { createFellowshipNights} from './seeds/fellowship_nights';
+import { createPictures } from './seeds/pictures';
+import { model } from 'mongoose';
 
 var app = express();
 
@@ -36,6 +38,39 @@ app.get('/api/stories', async (req, res) => {
 app.get('/api/fellowshipnights', async (req, res) => {
   const fsnight = await req.context.models.FellowshipNight.find();
   return res.send(fsnight);
+})
+
+app.get('/api/pictures', async (req, res) => {
+  const pictures = await req.context.models.Picture.find();
+  return res.send(pictures);
+})
+
+app.get('/api/pictures/:type', async (req, res) => {
+  const type = req.params.type;
+  const picture = await req.context.models.Picture.findOne({type});
+  return res.send(picture);
+})
+
+app.post('/api/pictures', async (req, res) => {
+  const picture = new model.Picture({
+    type: req.data.type,
+    url: req.data.url
+  })
+
+  picture.save();
+  return res.send(picture);
+})
+
+app.put('/api/pictures/:type', async (req, res) => {
+  req.context.models.Picture.findOneAndUpdate(
+    {type},
+    req.data,
+    {new: true},
+    (err, picture) => {
+      if (err) return res.status(500).send(err);
+      return res.send(picture)
+    }
+  )
 })
 
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -72,6 +107,7 @@ connectDb().then(async () => {
     ]);
     await createStories();
     await createFellowshipNights();
+    await createPictures();
   }
 
 
