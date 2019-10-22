@@ -14,7 +14,7 @@ const routes = {
     "/about-us": () => <About />,
     "/about-us/our-stories*": () => <Stories />,
     "/activities*": () => <Activities />,
-    "/contact-us": () => <Contact />
+    "/contact-us*": () => <Contact />
 }
 
 export default () => {

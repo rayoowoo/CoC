@@ -567,7 +567,6 @@ button:hover {
   background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg"); }
 
 .contact-content .contact-form {
-  display: none;
   color: white; }
   .contact-content .contact-form .contact-form-flex {
     display: flex; }
@@ -611,7 +610,6 @@ button:hover {
     .contact-content .contact-form .contact-interests label input {
       margin-right: 0.5em; }
 .contact-content .contact-response {
-  display: none;
   text-align: center; }
   .contact-content .contact-response .paragraph {
     text-align: center;
@@ -622,7 +620,5 @@ button:hover {
   .contact-content .contact-response .button2:hover {
     background-color: #3F4359;
     border-color: #3F4359; }
-.contact-content .contact-display {
-  display: block; }
 
 /*# sourceMappingURL=index.css.map */
