@@ -32,3 +32,12 @@ export const useFetch = url => {
     useEffect(() => { fetchData() }, []);
     return data;
 };
+
+export const put = async (path, obj) => {
+    const response = await fetch(path, {
+        method: 'put',
+        body: JSON.stringify(obj)
+    });
+
+    return response;
+}

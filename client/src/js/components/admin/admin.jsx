@@ -1,14 +1,20 @@
 import React, {useState} from 'react';
+import {put, useFetch} from '../reuse/utils';
 
 export default () => {
-    const [url, setUrl] = useState("");
+    const defaultPic = useFetch('/api/pictures/landing-splash') || {};
+    const { url="" } = defaultPic;
+    const [source, setSource] = useState(url);
 
     function handleSubmit(e) {
         e.preventDefault();
+        const picture = defaultPic;
+        picture.url = source;
+        put('/api/pictures/landing-splash', picture)
     }
 
     function handleChange(e) {
-        setUrl(e.target.value);
+        setSource(e.target.value);
     }
 
     return (
@@ -17,12 +23,11 @@ export default () => {
                 <h2 className="head2">Admin</h2>
             </div>
 
-            <section className="detail-content">
-                <h1>HI</h1>
+            <section className="detail-content admin-content">
                 <form onSubmit={handleSubmit}>
-                    <label>Landing Splash Image</label>
-                    <input onChange={handleChange} type="text"/>
-                    <input type="submit"/>
+                    <h3 className="head3">Landing Splash Image</h3>
+                    <input onChange={handleChange} value={url} type="text"/>
+                    <button className="button1">Submit</button>
                 </form>
             </section>
         </section>

@@ -53,8 +53,8 @@ app.get('/api/pictures/:type', async (req, res) => {
 
 app.post('/api/pictures', async (req, res) => {
   const picture = new model.Picture({
-    type: req.data.type,
-    url: req.data.url
+    type: req.body.type,
+    url: req.body.url
   })
 
   picture.save();
@@ -62,15 +62,15 @@ app.post('/api/pictures', async (req, res) => {
 })
 
 app.put('/api/pictures/:type', async (req, res) => {
-  req.context.models.Picture.findOneAndUpdate(
-    {type},
-    req.data,
-    {new: true},
-    (err, picture) => {
-      if (err) return res.status(500).send(err);
-      return res.send(picture)
-    }
-  )
+  req.context.models.Picture.findById(req.body.id, (err, picture) => {
+    if (err) return res.send(err);
+    picture.url = req.body.url;
+    picture.save(err => {
+      if (err) return res.send(err);
+      res.send(picture);
+    })
+  })
+
 })
 
 app.use(express.static(path.join(__dirname, 'client/build')));

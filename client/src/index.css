@@ -621,4 +621,10 @@ button:hover {
     background-color: #3F4359;
     border-color: #3F4359; }
 
+.admin-content input {
+  background-color: white;
+  display: block;
+  width: 30em;
+  margin: 1em 0; }
+
 /*# sourceMappingURL=index.css.map */

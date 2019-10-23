@@ -3,7 +3,6 @@ import {historyPush, useFetch} from '../reuse/utils';
 
 export default (props) => {
     const picture = useFetch('/api/pictures/landing-splash') || {};
-    console.log(picture);
 
     return (
         <section className="landing">
