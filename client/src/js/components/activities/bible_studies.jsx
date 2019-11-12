@@ -25,17 +25,17 @@ export default (props) => {
                 <h3 className="head3">TUESDAY:</h3>
                 <p className="paragraph">2:00 - 3:00 pm</p>
                 <p className="paragraph">Campanile Esplanade</p>
-                <p className="paragraph">Contact Kevin at (916) 879-4369</p>
+                <p className="paragraph">Contact Kevin at (###) ###-####</p>
 
                 <h3 className="head3">WEDNESDAY:</h3>
                 <p className="paragraph">1:00 - 2:00 pm</p>
                 <p className="paragraph">Eshleman Hall</p>
-                <p className="paragraph">Contact Grace at (714) 220-7702</p>
+                <p className="paragraph">Contact Grace at (###) ###-####</p>
 
                 <h3 className="head3">THURSDAY:</h3>
                 <p className="paragraph">8:00 - 9:00 pm</p>
                 <p className="paragraph">{'Dana & Haste (near unit 3)'}</p>
-                <p className="paragraph">Contact Alex at (909) 802-5652</p>
+                <p className="paragraph">Contact Alex at (###) ###-####</p>
 
                 <h2 className="head2">This is what we covered last semester in 1 Corinthians!</h2>
 
