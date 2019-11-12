@@ -24,10 +24,15 @@ Solution: React significantly boosts the loading time by turning the site into a
 This section describes the impelemented features of the original site, but not every feature listed here has been implemented in this project. Additionally, very few graphics or pictures have been uploaded. 
 
 **About Us:** Introduces the club and its mission
+
 **Activities:** Lists the most common activities that the club holds
+
 **Upcoming:** Lists all the upcoming club activities and events
+
 **Media:** Stores various media (photo, video, text) across the website
+
 **Blog:** A blog of short articles written by club members
+
 **Contact Us:** A contact form that feeds responses into a Google sheet
 
 ## Architecture and Technologies
