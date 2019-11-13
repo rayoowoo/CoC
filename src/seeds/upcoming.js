@@ -2,7 +2,7 @@ import { models } from "mongoose";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
-export const createUpcoming = async () => {
+export const createUpcomings = async () => {
     const upcoming1 = new models.Upcoming({
         title: "Fellowship Night",
         date: "January 13, 2019",

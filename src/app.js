@@ -11,7 +11,8 @@ import {createStories} from './seeds/stories';
 import { createFellowshipNights} from './seeds/fellowship_nights';
 import { createPictures } from './seeds/pictures';
 import { model } from 'mongoose';
-import { createUpcoming } from './seeds/upcoming';
+import { createUpcomings } from './seeds/upcoming';
+import { createBlogs } from './seeds/blog';
 
 var app = express();
 
@@ -86,6 +87,11 @@ app.get('/api/upcoming', async (req, res) => {
 
 })
 
+app.get('/api/blog', async (req, res) => {
+  const blogs = await req.context.models.Blog.find();
+  return res.send(blogs);
+})
+
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'));
@@ -118,12 +124,14 @@ connectDb().then(async () => {
       models.Story.deleteMany({}),
       models.FellowshipNight.deleteMany({}),
       models.Picture.deleteMany({}),
-      models.Upcoming.deleteMany({})
+      models.Upcoming.deleteMany({}),
+      models.Blog.deleteMany({})
     ]);
     await createStories();
     await createFellowshipNights();
     await createPictures();
-    await createUpcoming();
+    await createUpcomings();
+    await createBlogs();
   }
 
 
