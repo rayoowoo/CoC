@@ -75,7 +75,6 @@ app.put('/api/pictures/:type', async (req, res) => {
 
 app.get('/api/upcoming', async (req, res) => {
   const allUpcoming = await req.context.models.Upcoming.find();
-  console.log(allUpcoming)
   const validUpcoming = Array.from(allUpcoming).filter( upcoming => {
     const now = new Date();
     if (upcoming.date - now < 2592000000 || upcoming.urgent) {

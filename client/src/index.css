@@ -634,9 +634,13 @@ button:hover {
   width: 100%;
   margin-bottom: 5vh; }
   .upcoming-content .banner .banner-img {
-    height: 15vw;
+    height: 30vh;
     width: 100%;
-    border: 1px solid white;
-    margin-bottom: 2vh; }
+    margin-bottom: 2vh;
+    overflow: hidden; }
+    .upcoming-content .banner .banner-img img {
+      width: 100%; }
+  .upcoming-content .banner p {
+    white-space: pre-line; }
 
 /*# sourceMappingURL=index.css.map */

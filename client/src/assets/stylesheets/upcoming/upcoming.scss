@@ -8,10 +8,18 @@
         margin-bottom: 5vh;
 
         .banner-img {
-            height: 15vw;
+            height: 30vh;
             width: 100%;
-            border: 1px solid $main-highlight;
             margin-bottom: 2vh;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
         }
+
+        p {
+            white-space: pre-line;
+        } 
     }
 }

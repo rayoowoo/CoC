@@ -5,6 +5,9 @@
 import mongoose from 'mongoose';
 
 const upcomingSchema = new mongoose.Schema({
+    title: {
+        type: String
+    },
     description: {
         type: String
     },
