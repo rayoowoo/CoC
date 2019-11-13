@@ -46,8 +46,7 @@ This section describes the impelemented features of the original site, but not e
 
 ## Future Implementations
 1. Adding an admin page to allow website administrators to change the content of the page from one singular location
-2. An upcoming events page
-3. A media page
-4. Adding the blog
-5. Adding pictures and graphics
-6. Making the website responsive
+2. A media page
+3. Adding the blog
+4. Adding pictures and graphics
+5. Making the website responsive
