@@ -74,13 +74,16 @@ app.put('/api/pictures/:type', async (req, res) => {
 })
 
 app.get('/api/upcoming', async (req, res) => {
-  const allUpcoming = req.context.models.Upcoming.find();
-  const validUpcoming = allUpcoming.filter( upcoming => {
+  const allUpcoming = await req.context.models.Upcoming.find();
+  console.log(allUpcoming)
+  const validUpcoming = Array.from(allUpcoming).filter( upcoming => {
     const now = new Date();
     if (upcoming.date - now < 2592000000 || upcoming.urgent) {
       return upcoming;
     }
   })
+
+  return res.send(validUpcoming);
 
 })
 
@@ -114,7 +117,9 @@ connectDb().then(async () => {
   if (eraseDatabaseOnSync) {
     await Promise.all([
       models.Story.deleteMany({}),
-      models.FellowshipNight.deleteMany({})
+      models.FellowshipNight.deleteMany({}),
+      models.Picture.deleteMany({}),
+      models.Upcoming.deleteMany({})
     ]);
     await createStories();
     await createFellowshipNights();
