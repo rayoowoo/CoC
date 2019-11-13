@@ -11,6 +11,7 @@ import {createStories} from './seeds/stories';
 import { createFellowshipNights} from './seeds/fellowship_nights';
 import { createPictures } from './seeds/pictures';
 import { model } from 'mongoose';
+import { createUpcoming } from './seeds/upcoming';
 
 var app = express();
 
@@ -70,6 +71,16 @@ app.put('/api/pictures/:type', async (req, res) => {
       res.send(picture);
     })
   })
+})
+
+app.get('/api/upcoming', async (req, res) => {
+  const allUpcoming = req.context.models.Upcoming.find();
+  const validUpcoming = allUpcoming.filter( upcoming => {
+    const now = new Date();
+    if (upcoming.date - now < 2592000000 || upcoming.urgent) {
+      return upcoming;
+    }
+  })
 
 })
 
@@ -108,6 +119,7 @@ connectDb().then(async () => {
     await createStories();
     await createFellowshipNights();
     await createPictures();
+    await createUpcoming();
   }
 
 
