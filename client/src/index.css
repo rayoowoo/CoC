@@ -288,6 +288,17 @@ button:hover {
   right: 100%;
   top: 0; }
 
+.notfound {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 66vh; }
+  .notfound .head3 {
+    margin-top: 1em; }
+  .notfound .button1 {
+    margin-top: 3em; }
+
 .landing {
   width: 100%; }
   .landing .landing-img-container {
